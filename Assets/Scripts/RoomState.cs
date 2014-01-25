@@ -11,6 +11,16 @@ public class RoomState : MonoBehaviour
 
 	const float tileOffset = 1f;
 
+	public enum GamePhase
+	{
+		CharacterSetup,
+		RoomSelection,
+		DungeonAction,
+		WinGame, 
+		EpicFail,
+		MenuSelection
+	}
+
 	public enum OpponentType
 	{
 		Mook,
@@ -31,6 +41,7 @@ public class RoomState : MonoBehaviour
 
 	public Material[] cardMaterials;
 
+	public GamePhase currentPhase;
 	public OpponentType currentOpponent;
 	public GameObject cardHandDisabler;
 	public List<CardType> handOfCards;
@@ -51,6 +62,7 @@ public class RoomState : MonoBehaviour
 
 	void Start()
 	{
+		currentPhase = GamePhase.CharacterSetup;
 		currentOpponent = (OpponentType)Random.Range(0, (int)OpponentType.MAX);
 //		SetOpponentGraphic();
 
@@ -121,19 +133,25 @@ public class RoomState : MonoBehaviour
 
 			if (null != tileOver)
 			{
-				if (tileOver.dungeonSideDisplayed)
-				{
-					return;
-//					cardHandDisabler.SetActive(false);
-//					tileOver.FlipToAttribute();
-//					PositionCamera();
+				switch (currentPhase) {
+					case GamePhase.CharacterSetup:
+						if (!tileOver.dungeonSideDisplayed) {
+							print("Hello");
+						}
+						break;
+					case GamePhase.RoomSelection:
+						cardHandDisabler.SetActive(true);
+						tileOver.FlipToDungeon();
+						ZoomIntoTile(tileOver);
+						currentPhase=GamePhase.DungeonAction;
+						break;
+					case GamePhase.DungeonAction:
+						cardHandDisabler.SetActive (false);
+						PositionCamera();
+						currentPhase=GamePhase.RoomSelection;
+						break;
 				}
-				else
-				{
-					cardHandDisabler.SetActive(true);
-					tileOver.FlipToDungeon();
-					ZoomIntoTile(tileOver);
-				}
+
 			}
 		}
 	}
