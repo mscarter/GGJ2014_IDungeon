@@ -276,6 +276,7 @@ GameObject:
   - 64: {fileID: 144873013}
   - 23: {fileID: 144873012}
   - 114: {fileID: 144873015}
+  - 114: {fileID: 144873016}
   m_Layer: 8
   m_Name: CardQuad6
   m_TagString: Untagged
@@ -349,6 +350,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardHandIndex: 5
   glowRenderer: {fileID: 1475085145}
+  cardIconMaterials:
+  - {fileID: 2100000, guid: 1753185028c6f2e478c11581a97a9e9d, type: 2}
+  - {fileID: 2100000, guid: b3ba644c862bff6408f1e33fbad5f74b, type: 2}
+  - {fileID: 2100000, guid: e2bdf0d67ee11d84babcc32d476172a1, type: 2}
+  - {fileID: 2100000, guid: 39408f666f4bb534d8cdacf558fdcbff, type: 2}
+  - {fileID: 2100000, guid: b9deac9238cd1e940a66cb2a79e7d331, type: 2}
+  selected: 0
+--- !u!114 &144873016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 144873010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ad493fb54d46bb45857b6a7d208bb18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fromPosition: {x: 65.5286789, y: -10.6274796, z: -.108929701}
+  toPosition: {x: 75.3441772, y: 19.47188, z: -.108929701}
+  slideDuration: 1
+  reverseSlide: 0
 --- !u!1 &211153241
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,6 +384,7 @@ GameObject:
   - 64: {fileID: 211153244}
   - 23: {fileID: 211153243}
   - 114: {fileID: 211153246}
+  - 114: {fileID: 211153247}
   m_Layer: 8
   m_Name: CardQuad5
   m_TagString: Untagged
@@ -434,6 +458,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardHandIndex: 4
   glowRenderer: {fileID: 1261385719}
+  cardIconMaterials:
+  - {fileID: 2100000, guid: 1753185028c6f2e478c11581a97a9e9d, type: 2}
+  - {fileID: 2100000, guid: b3ba644c862bff6408f1e33fbad5f74b, type: 2}
+  - {fileID: 2100000, guid: e2bdf0d67ee11d84babcc32d476172a1, type: 2}
+  - {fileID: 2100000, guid: 39408f666f4bb534d8cdacf558fdcbff, type: 2}
+  - {fileID: 2100000, guid: b9deac9238cd1e940a66cb2a79e7d331, type: 2}
+  selected: 0
+--- !u!114 &211153247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 211153241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ad493fb54d46bb45857b6a7d208bb18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fromPosition: {x: 42.2537804, y: -5.10974503, z: -.540310383}
+  toPosition: {x: 49.6385612, y: 32.8911209, z: -.540310383}
+  slideDuration: 1
+  reverseSlide: 0
 --- !u!1 &253797704
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,6 +575,7 @@ MonoBehaviour:
   fromPosition: {x: 0, y: 0, z: 0}
   toPosition: {x: 0, y: 0, z: 0}
   slideDuration: 1
+  reverseSlide: 0
 --- !u!1 &319024175
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,9 +585,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 319024179}
   - 33: {fileID: 319024178}
-  - 64: {fileID: 319024177}
   - 23: {fileID: 319024176}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GlowOverlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -568,19 +614,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!64 &319024177
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 319024175}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &319024178
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -608,9 +641,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 373451126}
   - 33: {fileID: 373451129}
-  - 64: {fileID: 373451128}
   - 23: {fileID: 373451127}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GlowOverlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -649,19 +681,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!64 &373451128
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 373451125}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &373451129
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -750,13 +769,14 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 470933443}
+  - 114: {fileID: 470933444}
   m_Layer: 8
   m_Name: HandOfCards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &470933443
 Transform:
   m_ObjectHideFlags: 0
@@ -774,7 +794,32 @@ Transform:
   - {fileID: 211153242}
   - {fileID: 144873011}
   - {fileID: 1526918797}
+  - {fileID: 903069283}
   m_Father: {fileID: 1397105082}
+--- !u!114 &470933444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 470933442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdaf45517c7b3b94cad3183a927b6216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UICamera: {fileID: 1962137513}
+  mouseRayLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  cardsInHand:
+  - {fileID: 2034639192}
+  - {fileID: 1010812696}
+  - {fileID: 816361936}
+  - {fileID: 1104186783}
+  - {fileID: 211153246}
+  - {fileID: 144873015}
+  completeFightButton: {fileID: 903069279}
+  deckCount: {fileID: 1832502542}
 --- !u!1 &476989502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,14 +1047,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 39408f666f4bb534d8cdacf558fdcbff, type: 2}
   currentOpponent: 0
   cardHandDisabler: {fileID: 470933442}
-  handOfCards: 
-  cardObjects:
-  - {fileID: 2034639187}
-  - {fileID: 1010812691}
-  - {fileID: 816361931}
-  - {fileID: 1104186778}
-  - {fileID: 211153241}
-  - {fileID: 144873010}
   dungeonTilePrefab: {fileID: 100004, guid: 904d121b416533242868a73dfcd8a6a7, type: 2}
   mainCamera: {fileID: 253797708}
   tileClickMask:
@@ -1039,6 +1076,7 @@ GameObject:
   - 64: {fileID: 816361934}
   - 23: {fileID: 816361933}
   - 114: {fileID: 816361936}
+  - 114: {fileID: 816361937}
   m_Layer: 8
   m_Name: CardQuad3
   m_TagString: Untagged
@@ -1112,6 +1150,99 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardHandIndex: 2
   glowRenderer: {fileID: 1228860697}
+  cardIconMaterials:
+  - {fileID: 2100000, guid: 1753185028c6f2e478c11581a97a9e9d, type: 2}
+  - {fileID: 2100000, guid: b3ba644c862bff6408f1e33fbad5f74b, type: 2}
+  - {fileID: 2100000, guid: e2bdf0d67ee11d84babcc32d476172a1, type: 2}
+  - {fileID: 2100000, guid: 39408f666f4bb534d8cdacf558fdcbff, type: 2}
+  - {fileID: 2100000, guid: b9deac9238cd1e940a66cb2a79e7d331, type: 2}
+  selected: 0
+--- !u!114 &816361937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 816361931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ad493fb54d46bb45857b6a7d208bb18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fromPosition: {x: -8.53834248, y: 1.31876004, z: -.796103418}
+  toPosition: {x: -11.23419, y: 43.2041206, z: -.796103418}
+  slideDuration: 1
+  reverseSlide: 0
+--- !u!1 &903069279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 903069283}
+  - 33: {fileID: 903069282}
+  - 64: {fileID: 903069281}
+  - 23: {fileID: 903069280}
+  m_Layer: 8
+  m_Name: DefeatMonsterButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &903069280
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 903069279}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 1753185028c6f2e478c11581a97a9e9d, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!64 &903069281
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 903069279}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &903069282
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 903069279}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &903069283
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 903069279}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 97.854805, y: 91.006813, z: -11.3981962}
+  m_LocalScale: {x: 100, y: 50, z: 100}
+  m_Children:
+  - {fileID: 1614992987}
+  m_Father: {fileID: 470933443}
 --- !u!1 &954805857
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,6 +1328,7 @@ GameObject:
   - 64: {fileID: 1010812694}
   - 23: {fileID: 1010812693}
   - 114: {fileID: 1010812696}
+  - 114: {fileID: 1010812697}
   m_Layer: 8
   m_Name: CardQuad2
   m_TagString: Untagged
@@ -1270,6 +1402,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardHandIndex: 1
   glowRenderer: {fileID: 319024176}
+  cardIconMaterials:
+  - {fileID: 2100000, guid: 1753185028c6f2e478c11581a97a9e9d, type: 2}
+  - {fileID: 2100000, guid: b3ba644c862bff6408f1e33fbad5f74b, type: 2}
+  - {fileID: 2100000, guid: e2bdf0d67ee11d84babcc32d476172a1, type: 2}
+  - {fileID: 2100000, guid: 39408f666f4bb534d8cdacf558fdcbff, type: 2}
+  - {fileID: 2100000, guid: b9deac9238cd1e940a66cb2a79e7d331, type: 2}
+  selected: 0
+--- !u!114 &1010812697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1010812691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ad493fb54d46bb45857b6a7d208bb18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fromPosition: {x: -32.11203, y: -1.19670498, z: -1.10499001}
+  toPosition: {x: -38.0532303, y: 31.6388607, z: -1.10499001}
+  slideDuration: 1
+  reverseSlide: 0
 --- !u!1 &1050679205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1355,6 +1509,7 @@ GameObject:
   - 64: {fileID: 1104186781}
   - 23: {fileID: 1104186780}
   - 114: {fileID: 1104186783}
+  - 114: {fileID: 1104186784}
   m_Layer: 8
   m_Name: CardQuad4
   m_TagString: Untagged
@@ -1428,6 +1583,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardHandIndex: 3
   glowRenderer: {fileID: 1935604980}
+  cardIconMaterials:
+  - {fileID: 2100000, guid: 1753185028c6f2e478c11581a97a9e9d, type: 2}
+  - {fileID: 2100000, guid: b3ba644c862bff6408f1e33fbad5f74b, type: 2}
+  - {fileID: 2100000, guid: e2bdf0d67ee11d84babcc32d476172a1, type: 2}
+  - {fileID: 2100000, guid: 39408f666f4bb534d8cdacf558fdcbff, type: 2}
+  - {fileID: 2100000, guid: b9deac9238cd1e940a66cb2a79e7d331, type: 2}
+  selected: 0
+--- !u!114 &1104186784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1104186778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ad493fb54d46bb45857b6a7d208bb18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fromPosition: {x: 17.0036297, y: .834354401, z: -1.15033901}
+  toPosition: {x: 23.4738293, y: 40.1759109, z: -1.15033901}
+  slideDuration: 1
+  reverseSlide: 0
 --- !u!1 &1228860695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1437,9 +1614,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1228860696}
   - 33: {fileID: 1228860699}
-  - 64: {fileID: 1228860698}
   - 23: {fileID: 1228860697}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GlowOverlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1478,19 +1654,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!64 &1228860698
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1228860695}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &1228860699
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1507,9 +1670,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1261385718}
   - 33: {fileID: 1261385721}
-  - 64: {fileID: 1261385720}
   - 23: {fileID: 1261385719}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GlowOverlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1548,19 +1710,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!64 &1261385720
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1261385717}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &1261385721
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1675,9 +1824,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1475085144}
   - 33: {fileID: 1475085147}
-  - 64: {fileID: 1475085146}
   - 23: {fileID: 1475085145}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GlowOverlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1716,19 +1864,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!64 &1475085146
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1475085143}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &1475085147
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1853,6 +1988,76 @@ Prefab:
   m_RootGameObject: {fileID: 76704853}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1614992986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1614992987}
+  - 23: {fileID: 1614992989}
+  - 102: {fileID: 1614992988}
+  m_Layer: 8
+  m_Name: DefeatMonsterText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1614992987
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1614992986}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .0500000007, y: .100000001, z: .0500000007}
+  m_Children: []
+  m_Father: {fileID: 903069283}
+--- !u!102 &1614992988
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1614992986}
+  m_Text: Defeat Opponent
+  m_OffsetZ: 0
+  m_CharacterSize: 1
+  m_LineSpacing: 1
+  m_Anchor: 4
+  m_Alignment: 0
+  m_TabSize: 4
+  m_FontSize: 20
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190080
+--- !u!23 &1614992989
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1614992986}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
 --- !u!1001 &1732823696
 Prefab:
   m_ObjectHideFlags: 0
@@ -2072,9 +2277,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1935604979}
   - 33: {fileID: 1935604982}
-  - 64: {fileID: 1935604981}
   - 23: {fileID: 1935604980}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GlowOverlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2113,19 +2317,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!64 &1935604981
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1935604978}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &1935604982
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2145,7 +2336,6 @@ GameObject:
   - 124: {fileID: 1962137512}
   - 92: {fileID: 1962137511}
   - 81: {fileID: 1962137510}
-  - 114: {fileID: 1962137514}
   m_Layer: 8
   m_Name: Camera
   m_TagString: Untagged
@@ -2214,21 +2404,6 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
   m_OcclusionCulling: 1
---- !u!114 &1962137514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1962137508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdaf45517c7b3b94cad3183a927b6216, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UICamera: {fileID: 1962137513}
-  mouseRayLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!1 &2034639187
 GameObject:
   m_ObjectHideFlags: 0
@@ -2241,6 +2416,7 @@ GameObject:
   - 64: {fileID: 2034639190}
   - 23: {fileID: 2034639189}
   - 114: {fileID: 2034639192}
+  - 114: {fileID: 2034639193}
   m_Layer: 8
   m_Name: CardQuad1
   m_TagString: Untagged
@@ -2314,3 +2490,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardHandIndex: 0
   glowRenderer: {fileID: 373451127}
+  cardIconMaterials:
+  - {fileID: 2100000, guid: 1753185028c6f2e478c11581a97a9e9d, type: 2}
+  - {fileID: 2100000, guid: b3ba644c862bff6408f1e33fbad5f74b, type: 2}
+  - {fileID: 2100000, guid: e2bdf0d67ee11d84babcc32d476172a1, type: 2}
+  - {fileID: 2100000, guid: 39408f666f4bb534d8cdacf558fdcbff, type: 2}
+  - {fileID: 2100000, guid: b9deac9238cd1e940a66cb2a79e7d331, type: 2}
+  selected: 0
+--- !u!114 &2034639193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2034639187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ad493fb54d46bb45857b6a7d208bb18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fromPosition: {x: -55.7071686, y: -7.21363401, z: -1.68612397}
+  toPosition: {x: -67.3065186, y: 28.8218803, z: -1.68612397}
+  slideDuration: 1
+  reverseSlide: 0
