@@ -348,7 +348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardHandIndex: 5
-  glowRenderer: {fileID: 0}
+  glowRenderer: {fileID: 1475085145}
 --- !u!1 &211153241
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,7 +433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardHandIndex: 4
-  glowRenderer: {fileID: 0}
+  glowRenderer: {fileID: 1261385719}
 --- !u!1 &253797704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,7 +1111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardHandIndex: 2
-  glowRenderer: {fileID: 0}
+  glowRenderer: {fileID: 1228860697}
 --- !u!1 &954805857
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,7 +1269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardHandIndex: 1
-  glowRenderer: {fileID: 0}
+  glowRenderer: {fileID: 319024176}
 --- !u!1 &1050679205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,7 +1287,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &1050679206
 Renderer:
   m_ObjectHideFlags: 0
@@ -1339,7 +1339,7 @@ Transform:
   m_PrefabInternal: {fileID: 1741436011}
   m_GameObject: {fileID: 1050679205}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .394872457, y: -.6870749, z: 0}
+  m_LocalPosition: {x: .394872487, y: -.6870749, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1427,7 +1427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardHandIndex: 3
-  glowRenderer: {fileID: 0}
+  glowRenderer: {fileID: 1935604980}
 --- !u!1 &1228860695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1906,7 +1906,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: e545e5a6260108743b1b5d58cba6822c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: .394872457
+      value: .394872487
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e545e5a6260108743b1b5d58cba6822c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1934,7 +1934,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e545e5a6260108743b1b5d58cba6822c, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400000, guid: e545e5a6260108743b1b5d58cba6822c, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: e545e5a6260108743b1b5d58cba6822c, type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e545e5a6260108743b1b5d58cba6822c, type: 2}
@@ -2305,4 +2313,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardHandIndex: 0
-  glowRenderer: {fileID: 0}
+  glowRenderer: {fileID: 373451127}
