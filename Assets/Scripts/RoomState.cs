@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class RoomState : MonoBehaviour
 {
+	static public RoomState instance;
+
 	const int handCardSize = 6;
 
 	const int dungeonWidth = 3;
@@ -44,8 +46,6 @@ public class RoomState : MonoBehaviour
 	public GamePhase currentPhase;
 	public OpponentType currentOpponent;
 	public GameObject cardHandDisabler;
-	public List<CardType> handOfCards;
-	public GameObject[] cardObjects;
 
 	public GameObject dungeonTilePrefab;
 	List<DungeonTile> dungeonTiles = new List<DungeonTile>();
@@ -57,7 +57,13 @@ public class RoomState : MonoBehaviour
 
 	void Awake()
 	{
+		instance = this;
 		cameraSlider = mainCamera.GetComponent<Slider>();
+	}
+
+	void OnDestroy()
+	{
+		instance = null;
 	}
 
 	void Start()
@@ -66,14 +72,9 @@ public class RoomState : MonoBehaviour
 		currentOpponent = (OpponentType)Random.Range(0, (int)OpponentType.MAX);
 //		SetOpponentGraphic();
 
-		for (int i = 0; i < handCardSize; ++i)
-		{
-			handOfCards.Add((CardType)Random.Range(0, (int)CardType.MAX));
-		}
-		SetCardVisualizations();
-
 		BuildDungeon();
 		PositionCamera();
+		cardHandDisabler.SetActive(false);
 	}
 
 	void Update()
@@ -89,22 +90,6 @@ public class RoomState : MonoBehaviour
 		opponents[0].SetActive(currentOpponent == OpponentType.Mook);
 		opponents[1].SetActive(currentOpponent == OpponentType.Monster);
 		opponents[2].SetActive(currentOpponent == OpponentType.Trap);
-	}
-
-	void SetCardVisualizations()
-	{
-		for (int i = 0; i < cardObjects.Length; ++i)
-		{
-			if (i >= handOfCards.Count)
-			{
-				cardObjects[i].SetActive(false);
-			}
-			else
-			{
-				cardObjects[i].SetActive(true);
-				cardObjects[i].renderer.material = cardMaterials[(int)handOfCards[i]];
-			}
-		}
 	}
 
 	void BuildDungeon()
@@ -159,6 +144,7 @@ public class RoomState : MonoBehaviour
 	void PositionCamera()
 	{
 		cameraSlider.toPosition = new Vector3( tileOffset * dungeonWidth / 2f - 0.5f, tileOffset * dungeonHeight / 2f  - 0.5f, -4f);
+		cameraSlider.UseFromPosition();
 		cameraSlider.StartSlide(); 
 	}
 
@@ -166,6 +152,26 @@ public class RoomState : MonoBehaviour
 	{
 		Vector3 tilePosition = tile.transform.position;
 		cameraSlider.toPosition = tilePosition + tileFocusOffset;
+		cameraSlider.UseFromPosition();
 		cameraSlider.StartSlide();
+	}
+
+	public bool DoSelectedCardsDefeatOpponent()
+	{
+		// TODO: for reals yo
+		int cardSelectedCount = 0;
+
+		foreach (var selectedCard in CardManager.instance.GetSelectedCards())
+		{
+			++cardSelectedCount;
+		}
+
+		return cardSelectedCount > 2;
+	}
+
+	public void DisplayYouLose()
+	{
+		// TODO: the card handler has run the deck out of cards
+		// The game is over, change the phase and continue
 	}
 }

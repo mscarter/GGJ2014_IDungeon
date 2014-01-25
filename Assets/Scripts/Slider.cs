@@ -8,11 +8,18 @@ public class Slider : MonoBehaviour
 
 	public float slideDuration;
 
+	public bool reverseSlide;
+
 	Transform T;
 
 	void Awake()
 	{
 		T = transform;
+		fromPosition = T.localPosition;
+	}
+	
+	public void UseFromPosition()
+	{
 		fromPosition = T.localPosition;
 	}
 
@@ -29,11 +36,25 @@ public class Slider : MonoBehaviour
 		while (Time.time < endTime)
 		{
 			var t = (Time.time - startTime) / slideDuration;
-			T.localPosition = Vector3.Lerp(fromPosition, toPosition, t);
+
+			if (reverseSlide)
+			{
+				T.localPosition = Vector3.Lerp(toPosition, fromPosition, t);
+			}
+			else
+			{
+				T.localPosition = Vector3.Lerp(fromPosition, toPosition, t);
+			}
 			yield return null;
 		}
 
-		T.localPosition = toPosition;
-		fromPosition = T.localPosition;
+		if (reverseSlide)
+		{
+			T.localPosition = fromPosition;
+		}
+		else
+		{
+			T.localPosition = toPosition;
+		}
 	}
 }
