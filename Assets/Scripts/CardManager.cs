@@ -164,6 +164,7 @@ public class CardManager : MonoBehaviour
 			if (cardsInHand[i].selected)
 			{
 				deck.currentHand[i] = CardIcons.None;
+				cardsInHand[i].RedrawCard();
 			}
 
 			if (!deck.DrawCardsToHand())

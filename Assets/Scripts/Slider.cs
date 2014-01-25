@@ -11,6 +11,7 @@ public class Slider : MonoBehaviour
 	public bool reverseSlide;
 
 	Transform T;
+	bool slideCanceled;
 
 	void Awake()
 	{
@@ -30,11 +31,19 @@ public class Slider : MonoBehaviour
 
 	IEnumerator DoSlide()
 	{
+		slideCanceled = false;
+
 		float startTime = Time.time;
 		float endTime = startTime + slideDuration;
 
 		while (Time.time < endTime)
 		{
+			if (slideCanceled)
+			{
+				T.localPosition = fromPosition;
+				break;
+			}
+
 			var t = (Time.time - startTime) / slideDuration;
 
 			if (reverseSlide)
@@ -56,5 +65,10 @@ public class Slider : MonoBehaviour
 		{
 			T.localPosition = toPosition;
 		}
+	}
+
+	public void CancelSlide()
+	{
+		slideCanceled = true;
 	}
 }

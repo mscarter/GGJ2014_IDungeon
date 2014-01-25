@@ -65,4 +65,11 @@ public class CardUI : MonoBehaviour
 		}
 		renderer.material = cardIconMaterials[materialIndex];
 	}
+
+	public void RedrawCard()
+	{
+		glow = false;
+		selected = false;
+		cardSelectedSlider.CancelSlide();
+	}
 }
