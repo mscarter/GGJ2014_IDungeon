@@ -34,7 +34,6 @@ public class RoomState : MonoBehaviour
 	public Material[] cardMaterials;
 
 	public OpponentType currentOpponent;
-	public GameObject cardHandDisabler;
 
 	public GameObject dungeonTilePrefab;
 	List<DungeonTile> dungeonTiles = new List<DungeonTile>();
@@ -62,7 +61,8 @@ public class RoomState : MonoBehaviour
 
 		BuildDungeon();
 		PositionCamera();
-		cardHandDisabler.SetActive(false);
+
+		CardManager.instance.SetGUIActive(false);
 	}
 
 	void Update()
@@ -115,7 +115,7 @@ public class RoomState : MonoBehaviour
 				}
 				else
 				{
-					cardHandDisabler.SetActive(true);
+					CardManager.instance.SetGUIActive(true);
 					tileOver.FlipToDungeon();
 					ZoomIntoTile(tileOver);
 				}
