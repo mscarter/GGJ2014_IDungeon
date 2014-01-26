@@ -72,4 +72,9 @@ public class DungeonTile : MonoBehaviour
 	{
 		attributeGlow.gameObject.SetActive (value);
 	}
+
+	public void SetEquipmentDefinition(EquipmentDefinition equipment)
+	{
+		// TODO: actually change quad materials and stuff
+	}
 }
