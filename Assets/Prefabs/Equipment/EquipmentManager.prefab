@@ -2333,6 +2333,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679ce226e89a41e489916c38db1c035c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  equipmentTypeIconMaterials:
+  - {fileID: 2100000, guid: b3ba644c862bff6408f1e33fbad5f74b, type: 2}
+  - {fileID: 2100000, guid: e2bdf0d67ee11d84babcc32d476172a1, type: 2}
+  - {fileID: 2100000, guid: 39408f666f4bb534d8cdacf558fdcbff, type: 2}
+  - {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+  - {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+  - {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+  cardGrantedIconMaterials:
+  - {fileID: 2100000, guid: e544020a8fa0f6e4eb5da9a3b5469aee, type: 2}
+  - {fileID: 2100000, guid: b3ba644c862bff6408f1e33fbad5f74b, type: 2}
+  - {fileID: 2100000, guid: e2bdf0d67ee11d84babcc32d476172a1, type: 2}
+  - {fileID: 2100000, guid: 39408f666f4bb534d8cdacf558fdcbff, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

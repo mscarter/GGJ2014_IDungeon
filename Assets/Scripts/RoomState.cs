@@ -26,28 +26,9 @@ public class RoomState : MonoBehaviour
 		MenuSelection
 	}
 
-	public enum OpponentType
-	{
-		Mook,
-		Monster,
-		Trap,
-		MAX
-	}
-
 	public GameObject[] opponents;
 
-	public enum CardType
-	{
-		Fighter,
-		Mage,
-		Thief,
-		MAX
-	}
-
-	public Material[] cardMaterials;
-
 	public GamePhase currentPhase;
-	public OpponentType currentOpponent;
 
 	public GameObject dungeonTilePrefab;
 	List<DungeonTile> dungeonTiles = new List<DungeonTile>();
@@ -71,10 +52,9 @@ public class RoomState : MonoBehaviour
 	void Start()
 	{
 		currentPhase = GamePhase.CharacterSetup;
-		currentOpponent = (OpponentType)Random.Range(0, (int)OpponentType.MAX);
-//		SetOpponentGraphic();
 
 		BuildDungeon();
+		RandomlyPopulateDungeon();
 		PositionCameraForCharacterSelection();
 
 		CardManager.instance.SetGUIActive(false);
@@ -88,13 +68,6 @@ public class RoomState : MonoBehaviour
 		}
 	}
 
-	void SetOpponentGraphic()
-	{
-		opponents[0].SetActive(currentOpponent == OpponentType.Mook);
-		opponents[1].SetActive(currentOpponent == OpponentType.Monster);
-		opponents[2].SetActive(currentOpponent == OpponentType.Trap);
-	}
-
 	void BuildDungeon()
 	{
 		for (int i = 0; i < dungeonWidth; ++i)
@@ -105,11 +78,88 @@ public class RoomState : MonoBehaviour
 				tile.transform.position = new Vector3(i * tileWidthOffset, j * tileHeightOffset, 0);
 				tile.transform.localScale = new Vector3(1f, 0.75f, 1f);
 				var dungeonTile = tile.GetComponent<DungeonTile>();
-				dungeonTile.tileIndex = i * dungeonWidth + dungeonHeight;
-				dungeonTile.AttributeSideSelected=false;
-				dungeonTile.DungeonSideSelected=false;
+				dungeonTile.tileIndex = i * dungeonHeight + j;
+				dungeonTile.AttributeSideSelected = false;
+				dungeonTile.DungeonSideSelected = false;
+				dungeonTile.ConfigureDungeonGraphics();
 				dungeonTiles.Add(dungeonTile);
 			}
+		}
+	}
+
+	static public EquipmentSlot GetDungeonEquipmentSlot(int index)
+	{
+		switch (index)
+		{
+		case 0:
+			return EquipmentSlot.Misc;
+		case 1:
+			return EquipmentSlot.Misc;
+		case 2:
+			return EquipmentSlot.Gauntlets;
+		case 3:
+			return EquipmentSlot.Misc;
+		case 4:
+			return EquipmentSlot.Shoes;
+		case 5:
+			return EquipmentSlot.Legs;
+		case 6:
+			return EquipmentSlot.Torso;
+		case 7:
+			return EquipmentSlot.Head;
+		case 8:
+			return EquipmentSlot.Misc;
+		case 9:
+			return EquipmentSlot.Misc;
+		case 10:
+			return EquipmentSlot.Gauntlets;
+		case 11:
+			return EquipmentSlot.Misc;
+		default:
+			Debug.LogWarning("Bad dungeon slot");
+			return EquipmentSlot.Misc;
+		}
+	}
+
+	static public DoorsAndWalls GetDungeonDoorsAndWalls(int index)
+	{
+		switch (index)
+		{
+		case 0:
+			return DoorsAndWalls.BottomLeft;
+		case 1:
+			return DoorsAndWalls.Left;
+		case 2:
+			return DoorsAndWalls.Left;
+		case 3:
+			return DoorsAndWalls.TopLeft;
+		case 4:
+			return DoorsAndWalls.Bottom;
+		case 5:
+			return DoorsAndWalls.Middle;
+		case 6:
+			return DoorsAndWalls.Middle;
+		case 7:
+			return DoorsAndWalls.Top;
+		case 8:
+			return DoorsAndWalls.BottomRight;
+		case 9:
+			return DoorsAndWalls.Right;
+		case 10:
+			return DoorsAndWalls.Right;
+		case 11:
+			return DoorsAndWalls.TopRight;
+		default:
+			Debug.LogWarning("Bad dungeon slot");
+			return DoorsAndWalls.Middle;
+		}
+	}
+
+	void RandomlyPopulateDungeon()
+	{
+		foreach (var tile in dungeonTiles)
+		{
+			tile.SetEquipmentDefinition(EquipmentManager.instance.PullRandomEquipment(GetDungeonEquipmentSlot(tile.tileIndex)));
 		}
 	}
 
