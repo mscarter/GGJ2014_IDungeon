@@ -110,6 +110,10 @@ public class DungeonTile : MonoBehaviour
 		equipmentName.text = equipment.name;
 	}
 
+	public EquipmentDefinition GetEquipmentDefinition() {
+				return equipment;
+		}
+
 	public void ConfigureDungeonGraphics()
 	{
 		dungeonSide.material = DungeonManager.instance.GetBackground();

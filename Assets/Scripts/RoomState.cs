@@ -39,6 +39,9 @@ public class RoomState : MonoBehaviour
 	public LayerMask tileClickMask;
 	public Vector3 tileFocusOffset;
 	public GameObject characterSelectionMenu;
+
+	int selectedItemIndex = -1;
+	int selectedCharacterSlot = -1;
 	void Awake()
 	{
 		instance = this;
@@ -55,7 +58,6 @@ public class RoomState : MonoBehaviour
 		currentPhase = GamePhase.CharacterSetup;
 
 		BuildDungeon();
-		RandomlyPopulateDungeon();
 		PositionCameraForCharacterSelection();
 
 		CardManager.instance.SetGUIActive(false);
@@ -84,6 +86,7 @@ public class RoomState : MonoBehaviour
 				dungeonTile.DungeonSideSelected = false;
 				dungeonTile.ConfigureDungeonGraphics();
 				dungeonTiles.Add(dungeonTile);
+
 			}
 		}
 	}
@@ -184,9 +187,33 @@ public class RoomState : MonoBehaviour
 				switch (currentPhase) {
 					case GamePhase.CharacterSetup:
 						if (!tileOver.dungeonSideDisplayed) {
-						bool toggle = tileOver.AttributeSideSelected;
-						tileOver.AttributeSideSelected=!toggle;
+							bool toggle = tileOver.AttributeSideSelected;
+							tileOver.AttributeSideSelected=!toggle;
+							if (characterItemSelections.Contains(tileOver) ) {
+							selectedItemIndex=tileOver.tileIndex;
+						} else {
+							selectedCharacterSlot = tileOver.tileIndex;
 						}
+					}
+				if (selectedItemIndex!=-1 && selectedCharacterSlot!=-1){
+						DungeonTile characterSlot = dungeonTiles[selectedCharacterSlot];
+						DungeonTile itemSelected = characterItemSelections[selectedItemIndex];
+						characterSlot.SetEquipmentDefinition(itemSelected.GetEquipmentDefinition());
+						selectedItemIndex=-1;
+						selectedCharacterSlot=-1;
+						characterSlot.SetAttributeSideSelect(false);
+						itemSelected.SetAttributeSideSelect(false);
+						bool allAssigned = true;
+						foreach (DungeonTile myTiles in dungeonTiles){
+							if (myTiles.GetEquipmentDefinition() == null) {
+								allAssigned = false;
+								break;
+							}
+						}
+						if (allAssigned) {
+							characterSelectionMenu.gameObject.SetActive(false);
+						}
+					}
 						break;
 					case GamePhase.RoomSelection:
 					PositionCameraForCharacterSelection();
@@ -235,6 +262,7 @@ public class RoomState : MonoBehaviour
 							dungeonTile.DungeonSideSelected = false;
 							dungeonTile.FlipToDungeon ();
 							dungeonTile.SetEquipmentDefinition (equip);
+							dungeonTile.dungeonSideDisplayed=false;
 							characterItemSelections.Add (dungeonTile);
 							index++;
 					}
