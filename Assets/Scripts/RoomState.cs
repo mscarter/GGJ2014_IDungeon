@@ -46,6 +46,9 @@ public class RoomState : MonoBehaviour
 
 	public GameObject enterDungeonButton;
 
+	public AudioSource characterSelectionMusic;
+	public AudioSource dungeonAmbientMusic;
+
 	void Awake()
 	{
 		instance = this;
@@ -199,6 +202,8 @@ public class RoomState : MonoBehaviour
 		if (currentPhase == GamePhase.CharacterSetup)
 		{
 			SetupDeck();
+			characterSelectionMusic.Stop();
+			dungeonAmbientMusic.Play();
 		}
 
 		switch (newPhase)

@@ -8,6 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuScene.unity
   - enabled: 1
+    path: Assets/Scenes/Character Selection.unity
+  - enabled: 1
     path: Assets/Scenes/TestScene.unity
   - enabled: 1
     path: Assets/Scenes/CreditScene.unity
