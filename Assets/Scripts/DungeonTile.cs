@@ -10,6 +10,12 @@ public class DungeonTile : MonoBehaviour
 
 	public int tileIndex;
 
+	public MeshRenderer opponentRenderer;
+
+	public MeshRenderer attributeGlow;
+
+	public MeshRenderer dungeonGlow;
+
 	public void Flip()
 	{
 		if (dungeonSideDisplayed)
