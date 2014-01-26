@@ -21,5 +21,5 @@ public class EquipmentDefinition : MonoBehaviour
 
 	public OpponentType opponentType;
 
-	public Material cardFront;
+	public Material equipmentIcon;
 }
