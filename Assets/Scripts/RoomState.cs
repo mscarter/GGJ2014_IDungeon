@@ -44,6 +44,8 @@ public class RoomState : MonoBehaviour
 	int selectedCharacterSlot = -1;
 	DungeonTile currentRoom;
 
+	public GameObject enterDungeonButton;
+
 	void Awake()
 	{
 		instance = this;
@@ -194,9 +196,16 @@ public class RoomState : MonoBehaviour
 
 	void ChangePhase(GamePhase newPhase)
 	{
+		if (currentPhase == GamePhase.CharacterSetup)
+		{
+			SetupDeck();
+		}
+
 		switch (newPhase)
 		{
 		case GamePhase.RoomSelection:
+			characterSelectionMenu.gameObject.SetActive(false);
+			enterDungeonButton.gameObject.SetActive(false);
 			CardManager.instance.SetGUIActive(false);
 			PositionCameraForGamePlay();
 			break;
@@ -279,7 +288,7 @@ public class RoomState : MonoBehaviour
 							}
 						}
 						if (allAssigned) {
-							characterSelectionMenu.gameObject.SetActive(false);
+							enterDungeonButton.gameObject.SetActive(true);
 						}
 					}
 						break;
@@ -303,6 +312,10 @@ public class RoomState : MonoBehaviour
 			var menuButton = hit.collider.gameObject.GetComponent<CreationMenu>();
 			if (menuButton != null) {
 				FlipMenu(menuButton.equpmentSlot);
+			}
+			if (hit.collider.gameObject == enterDungeonButton)
+			{
+				ChangePhase(GamePhase.RoomSelection);
 			}
 
 		}

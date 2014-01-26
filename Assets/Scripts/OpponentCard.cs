@@ -10,7 +10,7 @@ public class OpponentCard : MonoBehaviour
 
 	void Awake()
 	{
-		gameObject.SetActive(false);
+//		gameObject.SetActive(false);
 	}
 
 	public void ShowOpponent(DungeonOpponent opponent)

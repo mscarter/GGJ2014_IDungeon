@@ -24,6 +24,7 @@ public class CardManager : MonoBehaviour
 	void Awake()
 	{
 		instance = this;
+		SetGUIActive(false);
 	}
 
 	void OnDestroy()
