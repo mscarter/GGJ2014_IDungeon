@@ -19,7 +19,6 @@ public class Deck
 
 	public int cardsRemaining { get { return deckList.Count; } }
 
-	// TODO: probably need parameters for this
 	public void GenerateDeck(int fighterCards, int mageCards, int thiefCards)
 	{
 		int[] cardFrequency = new int[4] { 0, fighterCards, mageCards, thiefCards };

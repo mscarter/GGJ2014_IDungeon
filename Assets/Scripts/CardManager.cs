@@ -36,17 +36,11 @@ public class CardManager : MonoBehaviour
 		gameObject.SetActive(active);
 	}
 
-	void Start()
-	{
-		// Temporary deck setup
-		CreateDeck();
-	}
-
-	void CreateDeck()
+	public void CreateDeck(int fighters, int mages, int thieves)
 	{
 		deck = new Deck();
 
-		deck.GenerateDeck(5,5,5);
+		deck.GenerateDeck(fighters, mages, thieves);
 
 		if (!deck.DrawCardsToHand())
 		{
@@ -165,6 +159,8 @@ public class CardManager : MonoBehaviour
 			Debug.LogWarning("Somehow clicked defeate opponent without having a good card set");
 			return;
 		}
+
+		RoomState.instance.OpponentDefeated();
 
 		for (int i = 0; i < cardsInHand.Length; ++i)
 		{
