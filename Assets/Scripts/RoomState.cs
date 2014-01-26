@@ -49,6 +49,8 @@ public class RoomState : MonoBehaviour
 	public AudioSource characterSelectionMusic;
 	public AudioSource dungeonAmbientMusic;
 
+	public GUIText winLoseText;
+
 	void Awake()
 	{
 		instance = this;
@@ -438,11 +440,22 @@ public class RoomState : MonoBehaviour
 		// TODO: the card handler has run the deck out of cards
 		// The game is over, change the phase and continue
 		ChangePhase(GamePhase.EpicFail);
+		winLoseText.text = "You have lost!";
+		winLoseText.gameObject.SetActive(true);
+		Invoke("ReloadMenu", 5f);
 	}
 
 	public void DisplayYouWin()
 	{
 		// TODO: do this
 		ChangePhase(GamePhase.WinGame);
+		winLoseText.text = "You win!";
+		winLoseText.gameObject.SetActive(true);
+		Invoke("ReloadMenu", 5f);
+	}
+
+	void ReloadMenu()
+	{
+		Application.LoadLevel(0);
 	}
 }
