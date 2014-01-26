@@ -47,7 +47,6 @@ public class RoomState : MonoBehaviour
 	public GameObject enterDungeonButton;
 
 	public AudioSource characterSelectionMusic;
-	public AudioSource dungeonAmbientMusic;
 
 	public GUIText winLoseText;
 
@@ -205,7 +204,7 @@ public class RoomState : MonoBehaviour
 		{
 			SetupDeck();
 			characterSelectionMusic.Stop();
-			dungeonAmbientMusic.Play();
+			DungeonManager.instance.PlayBackgroundMusic();
 		}
 
 		switch (newPhase)

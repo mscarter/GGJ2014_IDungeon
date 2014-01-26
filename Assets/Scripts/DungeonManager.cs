@@ -48,4 +48,9 @@ public class DungeonManager : MonoBehaviour
 	{
 		return tileSets[selectedTileSet].doorsAndWalls[(int)doorsAndWalls];
 	}
+
+	public void PlayBackgroundMusic()
+	{
+		tileSets[selectedTileSet].audio.Play();
+	}
 }
