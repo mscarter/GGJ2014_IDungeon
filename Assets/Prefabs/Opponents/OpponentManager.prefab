@@ -1686,7 +1686,7 @@ MonoBehaviour:
   fightersNeeded: 1
   magesNeeded: 1
   thievesNeeded: 0
-  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+  opponentImage: {fileID: 2100000, guid: e954e36c33ee73540ba9d967c130c959, type: 2}
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1734,7 +1734,7 @@ MonoBehaviour:
   fightersNeeded: 0
   magesNeeded: 0
   thievesNeeded: 1
-  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+  opponentImage: {fileID: 2100000, guid: b36c5bf90d6170a4db99fdd6b07f3dac, type: 2}
 --- !u!114 &11400014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1846,7 +1846,7 @@ MonoBehaviour:
   fightersNeeded: 0
   magesNeeded: 0
   thievesNeeded: 1
-  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+  opponentImage: {fileID: 2100000, guid: 4cece8154133c0846902567b561b1920, type: 2}
 --- !u!114 &11400028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1862,7 +1862,7 @@ MonoBehaviour:
   fightersNeeded: 0
   magesNeeded: 2
   thievesNeeded: 1
-  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+  opponentImage: {fileID: 2100000, guid: e174a9c961e4eb24ca94039e58b181e7, type: 2}
 --- !u!114 &11400030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1878,7 +1878,7 @@ MonoBehaviour:
   fightersNeeded: 1
   magesNeeded: 2
   thievesNeeded: 0
-  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+  opponentImage: {fileID: 2100000, guid: 5850b03fc4521b941abda5ae1211837a, type: 2}
 --- !u!114 &11400032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1894,7 +1894,7 @@ MonoBehaviour:
   fightersNeeded: 0
   magesNeeded: 1
   thievesNeeded: 0
-  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+  opponentImage: {fileID: 2100000, guid: 1f9b32d5b23134549850376b7df56e09, type: 2}
 --- !u!114 &11400034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1926,7 +1926,7 @@ MonoBehaviour:
   fightersNeeded: 1
   magesNeeded: 0
   thievesNeeded: 0
-  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+  opponentImage: {fileID: 2100000, guid: 7427e36f1e5f21e4ead44ee2c8557859, type: 2}
 --- !u!114 &11400038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1990,7 +1990,7 @@ MonoBehaviour:
   fightersNeeded: 2
   magesNeeded: 1
   thievesNeeded: 0
-  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+  opponentImage: {fileID: 2100000, guid: 07647429333a54c4dadb2f22e9905716, type: 2}
 --- !u!114 &11400046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2022,7 +2022,7 @@ MonoBehaviour:
   fightersNeeded: 2
   magesNeeded: 0
   thievesNeeded: 1
-  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+  opponentImage: {fileID: 2100000, guid: 277f6ec410bfa6945a1a21e0b82cdd74, type: 2}
 --- !u!114 &11400050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2054,7 +2054,7 @@ MonoBehaviour:
   fightersNeeded: 1
   magesNeeded: 0
   thievesNeeded: 1
-  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+  opponentImage: {fileID: 2100000, guid: f19b241dd2c8c874a8b5bb4c221c2037, type: 2}
 --- !u!114 &11400054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2070,7 +2070,7 @@ MonoBehaviour:
   fightersNeeded: 2
   magesNeeded: 0
   thievesNeeded: 0
-  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+  opponentImage: {fileID: 2100000, guid: dbb2d36469485574d8e9ec4620fbc75f, type: 2}
 --- !u!114 &11400056
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2214,7 +2214,7 @@ MonoBehaviour:
   fightersNeeded: 1
   magesNeeded: 0
   thievesNeeded: 0
-  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+  opponentImage: {fileID: 2100000, guid: a20344ee8e9b468448eedfba1bc5f453, type: 2}
 --- !u!114 &11400074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2246,7 +2246,7 @@ MonoBehaviour:
   fightersNeeded: 0
   magesNeeded: 0
   thievesNeeded: 1
-  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+  opponentImage: {fileID: 2100000, guid: 75ecc986cb0f8714e822ae64db6ea65d, type: 2}
 --- !u!114 &11400078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2358,7 +2358,7 @@ MonoBehaviour:
   fightersNeeded: 0
   magesNeeded: 1
   thievesNeeded: 1
-  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+  opponentImage: {fileID: 2100000, guid: 5334db6430d92844690648f8ac7b7845, type: 2}
 --- !u!114 &11400092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2406,7 +2406,7 @@ MonoBehaviour:
   fightersNeeded: 0
   magesNeeded: 0
   thievesNeeded: 2
-  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+  opponentImage: {fileID: 2100000, guid: 596833ef9cef8074a8e9ee099d247931, type: 2}
 --- !u!114 &11400098
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2422,7 +2422,7 @@ MonoBehaviour:
   fightersNeeded: 1
   magesNeeded: 0
   thievesNeeded: 0
-  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+  opponentImage: {fileID: 2100000, guid: f54e92e2e6a74e84982dbf52b3cbc4d6, type: 2}
 --- !u!114 &11400100
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2438,7 +2438,7 @@ MonoBehaviour:
   fightersNeeded: 1
   magesNeeded: 0
   thievesNeeded: 1
-  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+  opponentImage: {fileID: 2100000, guid: fbb21c3dba8db684991613ddf48bcd35, type: 2}
 --- !u!114 &11400102
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2454,7 +2454,7 @@ MonoBehaviour:
   fightersNeeded: 0
   magesNeeded: 1
   thievesNeeded: 1
-  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+  opponentImage: {fileID: 2100000, guid: 2d94c2b7d148f9442b9b639a16e9f8d8, type: 2}
 --- !u!114 &11400104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2470,7 +2470,7 @@ MonoBehaviour:
   fightersNeeded: 1
   magesNeeded: 0
   thievesNeeded: 1
-  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+  opponentImage: {fileID: 2100000, guid: d9aca03ba17b9524b94688535783b737, type: 2}
 --- !u!114 &11400106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2486,7 +2486,7 @@ MonoBehaviour:
   fightersNeeded: 0
   magesNeeded: 1
   thievesNeeded: 1
-  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+  opponentImage: {fileID: 2100000, guid: a32fdbb5835b90548a2af9d477640de5, type: 2}
 --- !u!114 &11400108
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2502,7 +2502,7 @@ MonoBehaviour:
   fightersNeeded: 1
   magesNeeded: 0
   thievesNeeded: 0
-  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+  opponentImage: {fileID: 2100000, guid: 716c9daa5e23af54d9178a82146471c1, type: 2}
 --- !u!114 &11400110
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2518,7 +2518,7 @@ MonoBehaviour:
   fightersNeeded: 0
   magesNeeded: 0
   thievesNeeded: 1
-  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+  opponentImage: {fileID: 2100000, guid: bf689a76313157d40a7c9ddc75613bfe, type: 2}
 --- !u!114 &11400112
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2534,7 +2534,7 @@ MonoBehaviour:
   fightersNeeded: 0
   magesNeeded: 1
   thievesNeeded: 0
-  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+  opponentImage: {fileID: 2100000, guid: a2305085eb8894742849e911eb42824c, type: 2}
 --- !u!114 &11400114
 MonoBehaviour:
   m_ObjectHideFlags: 1
