@@ -13,7 +13,8 @@ public class RoomState : MonoBehaviour
 	const int dungeonWidth = 3;
 	const int dungeonHeight = 4;
 
-	const float tileOffset = 1f;
+	const float tileHeightOffset = 0.75f;
+	const float tileWidthOffset = 1f;
 
 	public enum GamePhase
 	{
@@ -101,7 +102,8 @@ public class RoomState : MonoBehaviour
 			for (int j = 0; j < dungeonHeight; ++j)
 			{
 				var tile = (GameObject)Instantiate(dungeonTilePrefab);
-				tile.transform.position = new Vector3(i * tileOffset, j * tileOffset, 0);
+				tile.transform.position = new Vector3(i * tileWidthOffset, j * tileHeightOffset, 0);
+				tile.transform.localScale = new Vector3(1f, 0.75f, 1f);
 				var dungeonTile = tile.GetComponent<DungeonTile>();
 				dungeonTile.tileIndex = i * dungeonWidth + dungeonHeight;
 				dungeonTile.AttributeSideSelected=false;
@@ -156,7 +158,7 @@ public class RoomState : MonoBehaviour
 
 	void PositionCameraForGamePlay()
 	{
-		cameraSlider.toPosition = new Vector3( tileOffset * dungeonWidth / 2f - 0.5f, tileOffset * dungeonHeight / 2f  - 0.5f, -4f);
+		cameraSlider.toPosition = new Vector3( tileWidthOffset * dungeonWidth / 2f - 0.5f, tileHeightOffset * dungeonHeight / 2f  - 0.5f, -4f);
 		cameraSlider.UseFromPosition();
 		cameraSlider.StartSlide(); 
 	}

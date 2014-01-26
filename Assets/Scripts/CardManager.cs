@@ -44,7 +44,7 @@ public class CardManager : MonoBehaviour
 	{
 		deck = new Deck();
 
-		deck.GenerateDeck();
+		deck.GenerateDeck(5,5,5);
 
 		if (!deck.DrawCardsToHand())
 		{

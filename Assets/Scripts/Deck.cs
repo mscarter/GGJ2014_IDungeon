@@ -5,10 +5,9 @@ using System.Collections.Generic;
 public enum CardIcons
 {
 	None,
-	Hex,
-	Triangle,
-	Wavy,
-	Square,
+	Fighter,
+	Mage,
+	Thief,
 	MAX
 }
 
@@ -21,9 +20,9 @@ public class Deck
 	public int cardsRemaining { get { return deckList.Count; } }
 
 	// TODO: probably need parameters for this
-	public void GenerateDeck()
+	public void GenerateDeck(int fighterCards, int mageCards, int thiefCards)
 	{
-		int[] cardFrequency = new int[5] { 0, 5, 5, 5, 5 };
+		int[] cardFrequency = new int[4] { 0, fighterCards, mageCards, thiefCards };
 
 		for (int i = 0; i < cardFrequency.Length; ++i)
 		{
