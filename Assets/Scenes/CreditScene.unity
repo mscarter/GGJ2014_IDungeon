@@ -1166,7 +1166,7 @@ GameObject:
   - 23: {fileID: 1275637395}
   - 102: {fileID: 1275637394}
   m_Layer: 0
-  m_Name: Marisa Shaefer
+  m_Name: Marissa Schaefer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1179,7 +1179,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1275637393}
-  m_Text: Marisa Shaefer
+  m_Text: Marissa Schaefer
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
