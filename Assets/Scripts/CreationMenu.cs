@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class CreationMenu : MonoBehaviour {
+
+	public EquipmentSlot equpmentSlot;
 	
 	// Use this for initialization
 	void Start () {

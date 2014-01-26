@@ -32,12 +32,13 @@ public class RoomState : MonoBehaviour
 
 	public GameObject dungeonTilePrefab;
 	List<DungeonTile> dungeonTiles = new List<DungeonTile>();
+	List<DungeonTile> characterItemSelections = new List<DungeonTile>();
 
 	public Camera mainCamera;
 	Slider cameraSlider;
 	public LayerMask tileClickMask;
 	public Vector3 tileFocusOffset;
-
+	public GameObject characterSelectionMenu;
 	void Awake()
 	{
 		instance = this;
@@ -165,6 +166,7 @@ public class RoomState : MonoBehaviour
 
 	void CheckTileClick()
 	{
+
 		var clickRay = mainCamera.ScreenPointToRay(Input.mousePosition);
 
 		RaycastHit hit;
@@ -196,10 +198,34 @@ public class RoomState : MonoBehaviour
 				}
 
 			}
+			var menuButton = hit.collider.gameObject.GetComponent<CreationMenu>();
+			if (menuButton != null) {
+				FlipMenu(menuButton.equpmentSlot);
+			}
+
 		}
+
+
 	}
 
-
+	void FlipMenu (EquipmentSlot equipmentSlot)
+	{
+		characterSelectionMenu.animation.Play ("CardFlipDungeon");
+		int index = 0;
+		foreach (EquipmentDefinition equip in EquipmentManager.instance.GetEquipmentList (equipmentSlot) ) {
+			var tile = (GameObject)Instantiate(dungeonTilePrefab);
+			tile.transform.position = new Vector3(4.3f + index%3 * 0.75f, 3.2f - index/3 * 0.5f, 0);
+			tile.transform.localScale = new Vector3(0.75f, 0.5f, 1f);
+			var dungeonTile = tile.GetComponent<DungeonTile>();
+			dungeonTile.tileIndex = index;
+			dungeonTile.AttributeSideSelected=false;
+			dungeonTile.DungeonSideSelected=false;
+			dungeonTile.SetEquipmentDefinition(equip);
+			characterItemSelections.Add(dungeonTile);
+			index++;
+		}
+	}
+	
 	void PositionCameraForCharacterSelection() {
 		cameraSlider.toPosition = characterSelectionCameraPosition;
 		cameraSlider.UseFromPosition();

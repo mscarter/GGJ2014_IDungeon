@@ -30,7 +30,7 @@ public class EquipmentManager : MonoBehaviour
 		instance = null;
 	}
 
-	public IEnumerator<EquipmentDefinition> GetEquipmentList(EquipmentSlot slot)
+	public IEnumerable<EquipmentDefinition> GetEquipmentList(EquipmentSlot slot)
 	{
 		foreach (var piece in equipment)
 		{
