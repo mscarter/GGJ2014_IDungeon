@@ -12,7 +12,7 @@ public class CreditsScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Vector3 camPos = mainCamera.transform.position;
-		if (camPos.y < -34) {
+		if (camPos.y < -54) {
 			Application.LoadLevel (0);	 		
 		}
 		mainCamera.transform.Translate (Vector3.down * Time.deltaTime);

@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 33: {fileID: 3300000}
-  - 64: {fileID: 6400000}
   - 23: {fileID: 2300000}
+  - 64: {fileID: 6400000}
   m_Layer: 0
   m_Name: DungeonRoomSide
   m_TagString: Untagged
@@ -27,8 +27,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400002}
   - 33: {fileID: 3300002}
-  - 64: {fileID: 6400002}
   - 23: {fileID: 2300002}
+  - 64: {fileID: 6400002}
   m_Layer: 0
   m_Name: AttributesSide
   m_TagString: Untagged
@@ -63,8 +63,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400006}
   - 33: {fileID: 3300004}
-  - 64: {fileID: 6400004}
   - 23: {fileID: 2300004}
+  - 64: {fileID: 6400004}
   m_Layer: 0
   m_Name: GlowBorder
   m_TagString: Untagged
@@ -81,8 +81,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400008}
   - 33: {fileID: 3300006}
-  - 64: {fileID: 6400006}
   - 23: {fileID: 2300006}
+  - 64: {fileID: 6400006}
   m_Layer: 0
   m_Name: OpponentQuad
   m_TagString: Untagged
@@ -99,8 +99,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400010}
   - 33: {fileID: 3300008}
-  - 64: {fileID: 6400008}
   - 23: {fileID: 2300008}
+  - 64: {fileID: 6400008}
   m_Layer: 0
   m_Name: AttributeGlow
   m_TagString: Untagged
@@ -134,8 +134,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400014}
   - 33: {fileID: 3300010}
-  - 64: {fileID: 6400010}
   - 23: {fileID: 2300012}
+  - 64: {fileID: 6400010}
   m_Layer: 0
   m_Name: EquipmentTypeIcon
   m_TagString: Untagged
@@ -152,8 +152,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400016}
   - 33: {fileID: 3300012}
-  - 64: {fileID: 6400012}
   - 23: {fileID: 2300014}
+  - 64: {fileID: 6400012}
   m_Layer: 0
   m_Name: CardGranted3
   m_TagString: Untagged
@@ -170,8 +170,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400018}
   - 33: {fileID: 3300014}
-  - 64: {fileID: 6400014}
   - 23: {fileID: 2300016}
+  - 64: {fileID: 6400014}
   m_Layer: 0
   m_Name: CardGranted2
   m_TagString: Untagged
@@ -188,8 +188,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400020}
   - 33: {fileID: 3300016}
-  - 64: {fileID: 6400016}
   - 23: {fileID: 2300018}
+  - 64: {fileID: 6400016}
   m_Layer: 0
   m_Name: CardGranted1
   m_TagString: Untagged
@@ -206,8 +206,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400022}
   - 33: {fileID: 3300018}
-  - 64: {fileID: 6400018}
   - 23: {fileID: 2300020}
+  - 64: {fileID: 6400018}
   m_Layer: 0
   m_Name: EquipmentIconQuad
   m_TagString: Untagged
@@ -661,7 +661,7 @@ MeshFilter:
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!64 &6400000
 MeshCollider:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
@@ -674,7 +674,7 @@ MeshCollider:
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!64 &6400002
 MeshCollider:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}

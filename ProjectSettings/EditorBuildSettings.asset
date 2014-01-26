@@ -10,4 +10,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScene.unity
   - enabled: 1
-    path: Assets/CreditScene.unity
+    path: Assets/Scenes/CreditScene.unity
