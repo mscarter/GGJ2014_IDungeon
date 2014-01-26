@@ -26,7 +26,7 @@ public class Menu : MonoBehaviour {
 				}
 
 				if( objectHit == "Credits" ) {
-					Application.LoadLevel (2);
+					Application.LoadLevel(3);
 				}
 			}
 		}
