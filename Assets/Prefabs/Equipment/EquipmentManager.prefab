@@ -2342,9 +2342,9 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
   cardGrantedIconMaterials:
   - {fileID: 2100000, guid: e544020a8fa0f6e4eb5da9a3b5469aee, type: 2}
-  - {fileID: 2100000, guid: b3ba644c862bff6408f1e33fbad5f74b, type: 2}
-  - {fileID: 2100000, guid: e2bdf0d67ee11d84babcc32d476172a1, type: 2}
-  - {fileID: 2100000, guid: 39408f666f4bb534d8cdacf558fdcbff, type: 2}
+  - {fileID: 2100000, guid: 1799ea883dc1fa3438ea1564548e196f, type: 2}
+  - {fileID: 2100000, guid: 19b482bcb5528b34b822502fd0692c8e, type: 2}
+  - {fileID: 2100000, guid: 1b1779c8e3655074cb0eafae9fbdf42d, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
