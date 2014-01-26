@@ -57,7 +57,7 @@ public class Slider : MonoBehaviour
 			yield return null;
 		}
 
-		if (reverseSlide)
+		if (reverseSlide ^ slideCanceled)
 		{
 			T.localPosition = fromPosition;
 		}
@@ -70,5 +70,6 @@ public class Slider : MonoBehaviour
 	public void CancelSlide()
 	{
 		slideCanceled = true;
+		T.localPosition = fromPosition;
 	}
 }
