@@ -11,10 +11,32 @@ public class DungeonTile : MonoBehaviour
 	public int tileIndex;
 
 	public MeshRenderer opponentRenderer;
-
 	public MeshRenderer attributeGlow;
-
 	public MeshRenderer dungeonGlow;
+
+	bool dungeonSideSelected;
+	bool attributeSideSelected;
+
+	public bool DungeonSideSelected
+	{
+		set {
+			dungeonGlow.gameObject.SetActive(value);
+			dungeonSideSelected=false;
+		}
+
+		get { return dungeonSideSelected;}
+	}
+
+	public bool AttributeSideSelected
+	{
+		set {
+			attributeGlow.gameObject.SetActive(value);
+			attributeSideSelected=value;
+		}
+		get { return attributeSideSelected;}
+
+	}
+	
 
 	public void Flip()
 	{
@@ -39,5 +61,15 @@ public class DungeonTile : MonoBehaviour
 		animation.Play("CardFlipAttribute");
 		dungeonSideDisplayed = false;
 	}
-	
+
+	public void SetDungeonSideSelect(bool value) 
+	{
+		dungeonGlow.gameObject.SetActive (value);
+
+	}
+
+	public void SetAttributeSideSelect(bool value)
+	{
+		attributeGlow.gameObject.SetActive (value);
+	}
 }

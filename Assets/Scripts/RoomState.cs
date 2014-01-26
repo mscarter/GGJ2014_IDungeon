@@ -104,6 +104,8 @@ public class RoomState : MonoBehaviour
 				tile.transform.position = new Vector3(i * tileOffset, j * tileOffset, 0);
 				var dungeonTile = tile.GetComponent<DungeonTile>();
 				dungeonTile.tileIndex = i * dungeonWidth + dungeonHeight;
+				dungeonTile.AttributeSideSelected=false;
+				dungeonTile.DungeonSideSelected=false;
 				dungeonTiles.Add(dungeonTile);
 			}
 		}
@@ -123,7 +125,8 @@ public class RoomState : MonoBehaviour
 				switch (currentPhase) {
 					case GamePhase.CharacterSetup:
 						if (!tileOver.dungeonSideDisplayed) {
-							print("Hello");
+						bool toggle = tileOver.AttributeSideSelected;
+						tileOver.AttributeSideSelected=!toggle;
 						}
 						break;
 					case GamePhase.RoomSelection:
