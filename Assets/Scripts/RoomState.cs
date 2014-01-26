@@ -56,7 +56,7 @@ public class RoomState : MonoBehaviour
 	Slider cameraSlider;
 	public LayerMask tileClickMask;
 	public Vector3 tileFocusOffset;
-
+	public GameObject characterSelectionMenu;
 	void Awake()
 	{
 		instance = this;
@@ -115,6 +115,7 @@ public class RoomState : MonoBehaviour
 
 	void CheckTileClick()
 	{
+
 		var clickRay = mainCamera.ScreenPointToRay(Input.mousePosition);
 
 		RaycastHit hit;
@@ -146,9 +147,24 @@ public class RoomState : MonoBehaviour
 				}
 
 			}
+			var menuButton = hit.collider.gameObject.GetComponent<CreationMenu>();
+			if (menuButton != null) {
+				FlipMenu(menuButton.equpmentSlot);
+			}
+
 		}
+
+
 	}
 
+	void FlipMenu (EquipmentSlot equipmentSlot)
+	{
+
+		foreach (EquipmentDefinition equip in EquipmentManager.instance.GetEquipmentList (equipmentSlot) ) {
+			print ("List of equipment");
+			print (equip.name);
+		}
+	}
 
 	void PositionCameraForCharacterSelection() {
 		cameraSlider.toPosition = characterSelectionCameraPosition;

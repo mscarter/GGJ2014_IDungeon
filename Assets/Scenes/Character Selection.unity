@@ -74,6 +74,51 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
+--- !u!1 &12078571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100050, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 12078572}
+  - 114: {fileID: 12078573}
+  m_Layer: 0
+  m_Name: Combat boots
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &12078572
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400050, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 12078571}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &12078573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400050, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 12078571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 4
+  fighterCardsGenerated: 1
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 1
+  opponentType: 2
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &12456971
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,6 +191,50 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
+--- !u!1 &16884579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100092, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 16884580}
+  - 114: {fileID: 16884581}
+  m_Layer: 0
+  m_Name: Ice Trap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &16884580
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400092, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 16884579}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &16884581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400092, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 16884579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 0
+  magesNeeded: 0
+  thievesNeeded: 2
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &33425211
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,7 +286,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b3ba644c862bff6408f1e33fbad5f74b, type: 2}
   - {fileID: 2100000, guid: e2bdf0d67ee11d84babcc32d476172a1, type: 2}
   - {fileID: 2100000, guid: 39408f666f4bb534d8cdacf558fdcbff, type: 2}
-  - {fileID: 2100000, guid: b9deac9238cd1e940a66cb2a79e7d331, type: 2}
   selected: 0
 --- !u!114 &33425214
 MonoBehaviour:
@@ -259,6 +347,51 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1631560554}
   m_GameObject: {fileID: 33425211}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &36472797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100094, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 36472798}
+  - 114: {fileID: 36472799}
+  m_Layer: 0
+  m_Name: Thinking Cap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &36472798
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400094, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 36472797}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &36472799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400094, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 36472797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 0
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 1
+  thiefCardsGenerated: 1
+  opponentType: 1
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1001 &38765878
 Prefab:
   m_ObjectHideFlags: 0
@@ -434,6 +567,50 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1631560554}
   m_GameObject: {fileID: 67672024}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &73655030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100008, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 73655031}
+  - 114: {fileID: 73655032}
+  m_Layer: 0
+  m_Name: Demon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &73655031
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400008, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 73655030}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &73655032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400008, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 73655030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 0
+  magesNeeded: 2
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
 --- !u!1 &76704853
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +684,452 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &92585196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 92585197}
+  - 114: {fileID: 92585198}
+  m_Layer: 0
+  m_Name: Determination
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &92585197
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 92585196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &92585198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 92585196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 1
+  mageCardsGenerated: 1
+  thiefCardsGenerated: 1
+  opponentType: 1
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &107677953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100088, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 107677954}
+  - 114: {fileID: 107677955}
+  m_Layer: 0
+  m_Name: Snake Pit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &107677954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400088, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 107677953}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &107677955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400088, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 107677953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 1
+  magesNeeded: 0
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &110218410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100014, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 110218411}
+  - 114: {fileID: 110218412}
+  m_Layer: 0
+  m_Name: Mud Elemental
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &110218411
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400014, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 110218410}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &110218412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400014, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 110218410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 0
+  magesNeeded: 2
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+--- !u!1 &123533470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100030, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 123533471}
+  - 114: {fileID: 123533472}
+  m_Layer: 0
+  m_Name: Bow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &123533471
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400030, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 123533470}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &123533472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400030, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 123533470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 1
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 2
+  opponentType: 3
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &137047203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100062, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 137047204}
+  - 114: {fileID: 137047205}
+  m_Layer: 0
+  m_Name: Tight leather pants
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &137047204
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400062, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 137047203}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &137047205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400062, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 137047203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 3
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 1
+  thiefCardsGenerated: 1
+  opponentType: 1
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &146186227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100022, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 146186228}
+  - 114: {fileID: 146186229}
+  m_Layer: 0
+  m_Name: Armor Amulet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &146186228
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400022, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 146186227}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &146186229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400022, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 146186227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 1
+  thiefCardsGenerated: 1
+  opponentType: 1
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &151512697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100082, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 151512698}
+  - 114: {fileID: 151512699}
+  m_Layer: 0
+  m_Name: Wizard Robe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &151512698
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400082, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 151512697}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &151512699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400082, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 151512697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 1
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 2
+  thiefCardsGenerated: 0
+  opponentType: 3
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &181913116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100106, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 181913117}
+  - 114: {fileID: 181913118}
+  m_Layer: 0
+  m_Name: Pit trap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &181913117
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400106, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 181913116}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &181913118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400106, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 181913116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 0
+  magesNeeded: 1
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &249050679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100032, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 249050680}
+  - 114: {fileID: 249050681}
+  m_Layer: 0
+  m_Name: Ring of swift hands
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &249050680
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400032, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 249050679}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &249050681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400032, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 249050679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 2
+  thiefCardsGenerated: 1
+  opponentType: 2
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &251236840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100038, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 251236841}
+  - 114: {fileID: 251236842}
+  m_Layer: 0
+  m_Name: Blackguard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &251236841
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400038, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 251236840}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &251236842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400038, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 251236840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 0
+  magesNeeded: 2
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
 --- !u!1 &253797704
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,6 +1226,51 @@ MonoBehaviour:
   toPosition: {x: 2.79999995, y: 1.375, z: -4}
   slideDuration: 1
   reverseSlide: 0
+--- !u!1 &270601769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100054, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 270601770}
+  - 114: {fileID: 270601771}
+  m_Layer: 0
+  m_Name: Ninja booties
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &270601770
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400054, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 270601769}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &270601771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400054, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 270601769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 4
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 1
+  thiefCardsGenerated: 1
+  opponentType: 3
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &288687616
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,7 +1338,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b3ba644c862bff6408f1e33fbad5f74b, type: 2}
   - {fileID: 2100000, guid: e2bdf0d67ee11d84babcc32d476172a1, type: 2}
   - {fileID: 2100000, guid: 39408f666f4bb534d8cdacf558fdcbff, type: 2}
-  - {fileID: 2100000, guid: b9deac9238cd1e940a66cb2a79e7d331, type: 2}
   selected: 0
 --- !u!23 &288687620
 Renderer:
@@ -716,6 +1383,359 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1631560554}
   m_GameObject: {fileID: 288687616}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &302285386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100066, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 302285387}
+  - 114: {fileID: 302285388}
+  m_Layer: 0
+  m_Name: Goblin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &302285387
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400066, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 302285386}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &302285388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400066, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 302285386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 1
+  magesNeeded: 1
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+--- !u!1 &308453791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100096, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 308453792}
+  - 114: {fileID: 308453793}
+  m_Layer: 0
+  m_Name: Luchador Mask
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &308453792
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400096, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 308453791}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &308453793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400096, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 308453791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 0
+  fighterCardsGenerated: 1
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 1
+  opponentType: 2
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &323230466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100070, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 323230467}
+  - 114: {fileID: 323230468}
+  m_Layer: 0
+  m_Name: Cannibal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &323230467
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400070, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 323230466}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &323230468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400070, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 323230466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 0
+  magesNeeded: 1
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+--- !u!1 &332128759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100052, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 332128760}
+  - 114: {fileID: 332128761}
+  m_Layer: 0
+  m_Name: Ninja
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &332128760
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400052, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 332128759}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &332128761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400052, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 332128759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 1
+  magesNeeded: 0
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+--- !u!1 &346536743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100110, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 346536744}
+  - 114: {fileID: 346536745}
+  m_Layer: 0
+  m_Name: Disease Trap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &346536744
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400110, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 346536743}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &346536745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400110, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 346536743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 0
+  magesNeeded: 0
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &350076643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100080, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 350076644}
+  - 114: {fileID: 350076645}
+  m_Layer: 0
+  m_Name: Vacuum Trap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &350076644
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400080, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 350076643}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &350076645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400080, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 350076643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 2
+  magesNeeded: 0
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &362758672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100040, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 362758673}
+  - 114: {fileID: 362758674}
+  m_Layer: 0
+  m_Name: Cave Giant
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &362758673
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400040, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 362758672}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &362758674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400040, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 362758672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 1
+  magesNeeded: 1
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+--- !u!1 &383073506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100022, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 383073507}
+  - 114: {fileID: 383073508}
+  m_Layer: 0
+  m_Name: Lizardfolk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &383073507
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400022, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 383073506}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &383073508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400022, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 383073506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 0
+  magesNeeded: 2
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
 --- !u!1 &395209021
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,6 +1867,50 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &428470651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100012, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 428470652}
+  - 114: {fileID: 428470653}
+  m_Layer: 0
+  m_Name: Harpy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &428470652
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400012, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 428470651}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &428470653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400012, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 428470651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 0
+  magesNeeded: 0
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
 --- !u!1 &431545746
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,7 +1921,7 @@ GameObject:
   - 4: {fileID: 431545747}
   - 23: {fileID: 431545749}
   - 102: {fileID: 431545748}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Arms Selection Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -917,6 +1981,46 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
+--- !u!1001 &471861659
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400112, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400112, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400112, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400112, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400112, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400112, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400112, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_RootGameObject: {fileID: 1399208158}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &476989502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,7 +2122,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b3ba644c862bff6408f1e33fbad5f74b, type: 2}
   - {fileID: 2100000, guid: e2bdf0d67ee11d84babcc32d476172a1, type: 2}
   - {fileID: 2100000, guid: 39408f666f4bb534d8cdacf558fdcbff, type: 2}
-  - {fileID: 2100000, guid: b9deac9238cd1e940a66cb2a79e7d331, type: 2}
   selected: 0
 --- !u!114 &477590172
 MonoBehaviour:
@@ -1080,6 +2183,96 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1631560554}
   m_GameObject: {fileID: 477590169}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &493996862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100012, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493996863}
+  - 114: {fileID: 493996864}
+  m_Layer: 0
+  m_Name: Magical Aura
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &493996863
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400012, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 493996862}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &493996864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400012, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 493996862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 3
+  thiefCardsGenerated: 0
+  opponentType: 2
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &511464779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 511464780}
+  - 114: {fileID: 511464781}
+  m_Layer: 0
+  m_Name: Quickmind
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &511464780
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 511464779}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &511464781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 511464779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 1
+  mageCardsGenerated: 2
+  thiefCardsGenerated: 0
+  opponentType: 2
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &516787204
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,6 +2333,50 @@ MonoBehaviour:
   - {fileID: 288687619}
   completeFightButton: {fileID: 625698102}
   deckCount: {fileID: 12456973}
+--- !u!1 &528626385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100020, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 528626386}
+  - 114: {fileID: 528626387}
+  m_Layer: 0
+  m_Name: Vampire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &528626386
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400020, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 528626385}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &528626387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400020, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 528626385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 0
+  magesNeeded: 1
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
 --- !u!1 &537203343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1286,6 +2523,95 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1631560554}
   m_GameObject: {fileID: 625698102}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &644579539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100068, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 644579540}
+  - 114: {fileID: 644579541}
+  m_Layer: 0
+  m_Name: Dwarf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &644579540
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400068, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 644579539}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &644579541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400068, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 644579539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 1
+  magesNeeded: 0
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+--- !u!1 &650705785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100060, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 650705786}
+  - 114: {fileID: 650705787}
+  m_Layer: 0
+  m_Name: Safety pants
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &650705786
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400060, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 650705785}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &650705787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400060, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 650705785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 3
+  fighterCardsGenerated: 1
+  mageCardsGenerated: 1
+  thiefCardsGenerated: 0
+  opponentType: 3
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &655006335
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,7 +2622,7 @@ GameObject:
   - 4: {fileID: 655006336}
   - 23: {fileID: 655006338}
   - 102: {fileID: 655006337}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Head Selection Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1429,6 +2755,230 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1631560554}
   m_GameObject: {fileID: 661308828}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &668569812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100040, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 668569813}
+  - 114: {fileID: 668569814}
+  m_Layer: 0
+  m_Name: Greataxe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &668569813
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400040, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 668569812}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &668569814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400040, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 668569812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 3
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 0
+  opponentType: 1
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &687131556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100072, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 687131557}
+  - 114: {fileID: 687131558}
+  m_Layer: 0
+  m_Name: Criminal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &687131557
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400072, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 687131556}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &687131558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400072, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 687131556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 1
+  magesNeeded: 0
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+--- !u!1 &694586895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100058, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 694586896}
+  - 114: {fileID: 694586897}
+  m_Layer: 0
+  m_Name: Magic slippers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &694586896
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400058, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 694586895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &694586897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400058, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 694586895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 4
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 2
+  thiefCardsGenerated: 0
+  opponentType: 3
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &700733545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100026, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 700733546}
+  - 114: {fileID: 700733547}
+  m_Layer: 0
+  m_Name: Toolbelt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &700733546
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400026, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 700733545}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &700733547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400026, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 700733545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 1
+  mageCardsGenerated: 1
+  thiefCardsGenerated: 1
+  opponentType: 2
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &713219913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100092, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 713219914}
+  - 114: {fileID: 713219915}
+  m_Layer: 0
+  m_Name: Domino Mask
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &713219914
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400092, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 713219913}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &713219915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400092, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 713219913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 0
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 2
+  opponentType: 1
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &742863900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,6 +3023,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   tileFocusOffset: {x: 0, y: 0, z: -1}
+  characterSelectionMenu: {fileID: 2036858953}
 --- !u!4 &742863902
 Transform:
   m_ObjectHideFlags: 0
@@ -1495,7 +3046,8 @@ GameObject:
   - 33: {fileID: 743913576}
   - 64: {fileID: 743913575}
   - 23: {fileID: 743913574}
-  m_Layer: 0
+  - 114: {fileID: 743913577}
+  m_Layer: 9
   m_Name: Equipment Selection Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1555,6 +3107,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 743913572}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &743913577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 743913572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90157ff9d56bc9a41a2fa740a8368db8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equpmentSlot: 5
 --- !u!1 &768114400
 GameObject:
   m_ObjectHideFlags: 0
@@ -1565,7 +3129,7 @@ GameObject:
   - 4: {fileID: 768114401}
   - 23: {fileID: 768114403}
   - 102: {fileID: 768114402}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Torso Selection Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1625,6 +3189,185 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
+--- !u!1 &773319975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100016, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 773319976}
+  - 114: {fileID: 773319977}
+  m_Layer: 0
+  m_Name: Thief's tools
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &773319976
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400016, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 773319975}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &773319977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400016, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 773319975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 2
+  opponentType: 1
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &776414659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100018, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 776414660}
+  - 114: {fileID: 776414661}
+  m_Layer: 0
+  m_Name: Flesh Golem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &776414660
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400018, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 776414659}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &776414661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400018, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 776414659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 1
+  magesNeeded: 1
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+--- !u!1 &786936264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100014, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 786936265}
+  - 114: {fileID: 786936266}
+  m_Layer: 0
+  m_Name: Warhammer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &786936265
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400014, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 786936264}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &786936266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400014, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 786936264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 3
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 0
+  opponentType: 1
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &799814891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100044, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 799814892}
+  - 114: {fileID: 799814893}
+  m_Layer: 0
+  m_Name: Magic Staff
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &799814892
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400044, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 799814891}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &799814893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400044, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 799814891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 2
+  thiefCardsGenerated: 0
+  opponentType: 3
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &837471481
 GameObject:
   m_ObjectHideFlags: 0
@@ -1635,7 +3378,7 @@ GameObject:
   - 4: {fileID: 837471482}
   - 23: {fileID: 837471484}
   - 102: {fileID: 837471483}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Equipment Selection Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1695,6 +3438,183 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
+--- !u!1 &879463004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100046, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 879463005}
+  - 114: {fileID: 879463006}
+  m_Layer: 0
+  m_Name: Hired gun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &879463005
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400046, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 879463004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &879463006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400046, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 879463004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 2
+  magesNeeded: 1
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+--- !u!1 &901310880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100010, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 901310881}
+  - 114: {fileID: 901310882}
+  m_Layer: 0
+  m_Name: Chimera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &901310881
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400010, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 901310880}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &901310882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400010, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 901310880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 0
+  magesNeeded: 1
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+--- !u!1 &924202615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100028, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 924202616}
+  - 114: {fileID: 924202617}
+  m_Layer: 0
+  m_Name: Assasin's blade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &924202616
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400028, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 924202615}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &924202617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400028, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 924202615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 1
+  thiefCardsGenerated: 2
+  opponentType: 3
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &939529095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100082, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 939529096}
+  - 114: {fileID: 939529097}
+  m_Layer: 0
+  m_Name: Molten Gold
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &939529096
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400082, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 939529095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &939529097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400082, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 939529095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 1
+  magesNeeded: 0
+  thievesNeeded: 2
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &954805857
 GameObject:
   m_ObjectHideFlags: 0
@@ -1768,6 +3688,184 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &970141074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100066, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 970141075}
+  - 114: {fileID: 970141076}
+  m_Layer: 0
+  m_Name: Utility Pants
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &970141075
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400066, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 970141074}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &970141076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400066, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 970141074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 3
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 2
+  opponentType: 1
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &972570703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100064, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 972570704}
+  - 114: {fileID: 972570705}
+  m_Layer: 0
+  m_Name: Orc
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &972570704
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400064, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 972570703}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &972570705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400064, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 972570703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 1
+  magesNeeded: 0
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+--- !u!1 &986871671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100044, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 986871672}
+  - 114: {fileID: 986871673}
+  m_Layer: 0
+  m_Name: Werewolf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &986871672
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400044, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 986871671}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &986871673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400044, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 986871671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 2
+  magesNeeded: 1
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+--- !u!1 &1001798790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100076, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1001798791}
+  - 114: {fileID: 1001798792}
+  m_Layer: 0
+  m_Name: Dexterity gloves
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1001798791
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400076, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1001798790}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1001798792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400076, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1001798790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 2
+  fighterCardsGenerated: 1
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 1
+  opponentType: 1
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &1003619711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1835,7 +3933,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b3ba644c862bff6408f1e33fbad5f74b, type: 2}
   - {fileID: 2100000, guid: e2bdf0d67ee11d84babcc32d476172a1, type: 2}
   - {fileID: 2100000, guid: 39408f666f4bb534d8cdacf558fdcbff, type: 2}
-  - {fileID: 2100000, guid: b9deac9238cd1e940a66cb2a79e7d331, type: 2}
   selected: 0
 --- !u!23 &1003619715
 Renderer:
@@ -1881,6 +3978,94 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1631560554}
   m_GameObject: {fileID: 1003619711}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1044149452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100048, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1044149454}
+  - 114: {fileID: 1044149453}
+  m_Layer: 0
+  m_Name: Barbarian
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1044149453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400048, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1044149452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 2
+  magesNeeded: 0
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+--- !u!4 &1044149454
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400048, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1044149452}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!1 &1044679997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100100, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1044679998}
+  - 114: {fileID: 1044679999}
+  m_Layer: 0
+  m_Name: Spike Trap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1044679998
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400100, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1044679997}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1044679999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400100, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1044679997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 1
+  magesNeeded: 0
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &1050679205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1954,6 +4139,229 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &1053227569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100032, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1053227570}
+  - 114: {fileID: 1053227571}
+  m_Layer: 0
+  m_Name: Giant Spider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1053227570
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400032, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1053227569}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1053227571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400032, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1053227569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 0
+  magesNeeded: 1
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+--- !u!1 &1088238528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100072, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1088238529}
+  - 114: {fileID: 1088238530}
+  m_Layer: 0
+  m_Name: Thief's gloves
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1088238529
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400072, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1088238528}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1088238530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400072, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1088238528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 2
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 2
+  opponentType: 1
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1105160078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100016, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1105160079}
+  - 114: {fileID: 1105160080}
+  m_Layer: 0
+  m_Name: Pit Fiend
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1105160079
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400016, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1105160078}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1105160080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400016, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1105160078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 1
+  magesNeeded: 1
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+--- !u!1 &1111867385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100100, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1111867386}
+  - 114: {fileID: 1111867387}
+  m_Layer: 0
+  m_Name: EquipmentManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1111867386
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400100, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1111867385}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .424428135, y: 1.55162454, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_Children:
+  - {fileID: 146186228}
+  - {fileID: 1248783288}
+  - {fileID: 924202616}
+  - {fileID: 123533471}
+  - {fileID: 2075758476}
+  - {fileID: 1896160306}
+  - {fileID: 1203022224}
+  - {fileID: 1353811595}
+  - {fileID: 12078572}
+  - {fileID: 1491236598}
+  - {fileID: 92585197}
+  - {fileID: 1001798791}
+  - {fileID: 1439975556}
+  - {fileID: 1443247012}
+  - {fileID: 713219914}
+  - {fileID: 668569813}
+  - {fileID: 1528632658}
+  - {fileID: 1241867275}
+  - {fileID: 1330718221}
+  - {fileID: 1458521020}
+  - {fileID: 1168351733}
+  - {fileID: 694586896}
+  - {fileID: 799814892}
+  - {fileID: 1758699824}
+  - {fileID: 493996863}
+  - {fileID: 1579524256}
+  - {fileID: 270601770}
+  - {fileID: 1614007022}
+  - {fileID: 1446103677}
+  - {fileID: 511464780}
+  - {fileID: 2134399891}
+  - {fileID: 249050680}
+  - {fileID: 1806850336}
+  - {fileID: 650705786}
+  - {fileID: 1879631222}
+  - {fileID: 1426567258}
+  - {fileID: 1727872345}
+  - {fileID: 1088238529}
+  - {fileID: 773319976}
+  - {fileID: 137047204}
+  - {fileID: 2029505209}
+  - {fileID: 700733546}
+  - {fileID: 2122044073}
+  - {fileID: 1926127688}
+  - {fileID: 970141075}
+  - {fileID: 786936265}
+  - {fileID: 1724720911}
+  - {fileID: 1472523190}
+  - {fileID: 308453792}
+  - {fileID: 36472798}
+  - {fileID: 151512698}
+  m_Father: {fileID: 0}
+--- !u!114 &1111867387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400102, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1111867385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679ce226e89a41e489916c38db1c035c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1124235988
 GameObject:
   m_ObjectHideFlags: 0
@@ -2096,6 +4504,98 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
   m_OcclusionCulling: 1
+--- !u!1001 &1144274289
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400100, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .424428135
+      objectReference: {fileID: 0}
+    - target: {fileID: 400100, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.55162454
+      objectReference: {fileID: 0}
+    - target: {fileID: 400100, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400100, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400100, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400100, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400100, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400100, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400100, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_RootGameObject: {fileID: 1111867385}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &1154319854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100030, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1154319855}
+  - 114: {fileID: 1154319856}
+  m_Layer: 0
+  m_Name: Rhinosaurus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1154319855
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400030, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1154319854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1154319856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400030, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1154319854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 1
+  magesNeeded: 2
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
 --- !u!1 &1164580744
 GameObject:
   m_ObjectHideFlags: 0
@@ -2107,7 +4607,8 @@ GameObject:
   - 33: {fileID: 1164580747}
   - 64: {fileID: 1164580746}
   - 23: {fileID: 1164580745}
-  m_Layer: 0
+  - 114: {fileID: 1164580749}
+  m_Layer: 9
   m_Name: Head Selection Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2167,6 +4668,63 @@ Transform:
   m_Children:
   - {fileID: 655006336}
   m_Father: {fileID: 2036858954}
+--- !u!114 &1164580749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1164580744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90157ff9d56bc9a41a2fa740a8368db8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equpmentSlot: 0
+--- !u!1 &1168351731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100068, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1168351733}
+  - 114: {fileID: 1168351732}
+  m_Layer: 0
+  m_Name: Magic pants
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1168351732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400068, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1168351731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 3
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 2
+  thiefCardsGenerated: 0
+  opponentType: 3
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!4 &1168351733
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400068, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1168351731}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
 --- !u!1 &1186688368
 GameObject:
   m_ObjectHideFlags: 0
@@ -2178,7 +4736,8 @@ GameObject:
   - 33: {fileID: 1186688372}
   - 64: {fileID: 1186688371}
   - 23: {fileID: 1186688370}
-  m_Layer: 0
+  - 114: {fileID: 1186688373}
+  m_Layer: 9
   m_Name: Torso Selection Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2238,6 +4797,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1186688368}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1186688373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1186688368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90157ff9d56bc9a41a2fa740a8368db8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equpmentSlot: 1
+--- !u!1 &1192695472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100102, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1192695473}
+  - 114: {fileID: 1192695474}
+  m_Layer: 0
+  m_Name: Flood Trap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1192695473
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400102, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1192695472}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1192695474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400102, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1192695472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 0
+  magesNeeded: 1
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &1193459779
 GameObject:
   m_ObjectHideFlags: 0
@@ -2249,7 +4864,8 @@ GameObject:
   - 33: {fileID: 1193459783}
   - 64: {fileID: 1193459782}
   - 23: {fileID: 1193459781}
-  m_Layer: 0
+  - 114: {fileID: 1193459784}
+  m_Layer: 9
   m_Name: Arms Selection Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2309,6 +4925,329 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1193459779}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1193459784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1193459779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90157ff9d56bc9a41a2fa740a8368db8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equpmentSlot: 2
+--- !u!1 &1203022223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100084, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1203022224}
+  - 114: {fileID: 1203022225}
+  m_Layer: 0
+  m_Name: Catsuit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1203022224
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400084, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1203022223}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1203022225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400084, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1203022223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 1
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 2
+  opponentType: 1
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1207353317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100098, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1207353318}
+  - 114: {fileID: 1207353319}
+  m_Layer: 0
+  m_Name: Gas Trap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1207353318
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400098, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1207353317}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1207353319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400098, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1207353317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 1
+  magesNeeded: 0
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1207795490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100078, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1207795491}
+  - 114: {fileID: 1207795492}
+  m_Layer: 0
+  m_Name: Drop Ceiling
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1207795491
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400078, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1207795490}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1207795492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400078, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1207795490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 1
+  magesNeeded: 1
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1210866652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1210866653}
+  - 114: {fileID: 1210866654}
+  m_Layer: 0
+  m_Name: Lich
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1210866653
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1210866652}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1210866654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1210866652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 1
+  magesNeeded: 0
+  thievesNeeded: 2
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+--- !u!1 &1227785732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100096, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1227785733}
+  - 114: {fileID: 1227785734}
+  m_Layer: 0
+  m_Name: Hot Tar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1227785733
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400096, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1227785732}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1227785734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400096, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1227785732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 0
+  magesNeeded: 0
+  thievesNeeded: 2
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1241867274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100080, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1241867275}
+  - 114: {fileID: 1241867276}
+  m_Layer: 0
+  m_Name: Iron Gauntlets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1241867275
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400080, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1241867274}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1241867276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400080, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1241867274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 2
+  fighterCardsGenerated: 2
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 0
+  opponentType: 2
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1248783287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100064, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1248783288}
+  - 114: {fileID: 1248783289}
+  m_Layer: 0
+  m_Name: Armored boots
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1248783288
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400064, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1248783287}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1248783289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400064, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1248783287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 4
+  fighterCardsGenerated: 2
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 0
+  opponentType: 2
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &1271948353
 GameObject:
   m_ObjectHideFlags: 0
@@ -2337,6 +5276,325 @@ Transform:
   - {fileID: 1128892366}
   - {fileID: 516787205}
   m_Father: {fileID: 0}
+--- !u!1 &1274130655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100042, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1274130656}
+  - 114: {fileID: 1274130657}
+  m_Layer: 0
+  m_Name: Chieftain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1274130656
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400042, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1274130655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1274130657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400042, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1274130655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 1
+  magesNeeded: 2
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+--- !u!1 &1330718220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100088, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1330718221}
+  - 114: {fileID: 1330718222}
+  m_Layer: 0
+  m_Name: Magic Chainmail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1330718221
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400088, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1330718220}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1330718222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400088, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1330718220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 1
+  fighterCardsGenerated: 1
+  mageCardsGenerated: 1
+  thiefCardsGenerated: 0
+  opponentType: 3
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1353811594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100036, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1353811595}
+  - 114: {fileID: 1353811596}
+  m_Layer: 0
+  m_Name: Cloak of night
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1353811595
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400036, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1353811594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1353811596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400036, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1353811594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 3
+  opponentType: 3
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1397786382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100026, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1397786383}
+  - 114: {fileID: 1397786384}
+  m_Layer: 0
+  m_Name: Imp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1397786383
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400026, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1397786382}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1397786384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400026, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1397786382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 0
+  magesNeeded: 0
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+--- !u!1 &1399208158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100112, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1399208159}
+  - 114: {fileID: 1399208160}
+  m_Layer: 0
+  m_Name: OpponentManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1399208159
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400112, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1399208158}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1784999027}
+  - {fileID: 1044149454}
+  - {fileID: 251236841}
+  - {fileID: 1625665995}
+  - {fileID: 2083541338}
+  - {fileID: 323230467}
+  - {fileID: 362758673}
+  - {fileID: 1274130656}
+  - {fileID: 901310881}
+  - {fileID: 2045901695}
+  - {fileID: 1527122384}
+  - {fileID: 1504700896}
+  - {fileID: 687131557}
+  - {fileID: 73655031}
+  - {fileID: 1842427330}
+  - {fileID: 346536744}
+  - {fileID: 1694259354}
+  - {fileID: 1207795491}
+  - {fileID: 644579540}
+  - {fileID: 1709396186}
+  - {fileID: 776414660}
+  - {fileID: 1192695473}
+  - {fileID: 1207353318}
+  - {fileID: 1053227570}
+  - {fileID: 302285387}
+  - {fileID: 1445014348}
+  - {fileID: 1807729043}
+  - {fileID: 428470652}
+  - {fileID: 879463005}
+  - {fileID: 1227785733}
+  - {fileID: 16884580}
+  - {fileID: 1397786383}
+  - {fileID: 2110489325}
+  - {fileID: 1618182922}
+  - {fileID: 1210866653}
+  - {fileID: 383073507}
+  - {fileID: 1800216118}
+  - {fileID: 1696481929}
+  - {fileID: 1531492323}
+  - {fileID: 939529096}
+  - {fileID: 110218411}
+  - {fileID: 1814312091}
+  - {fileID: 332128760}
+  - {fileID: 972570704}
+  - {fileID: 1602008080}
+  - {fileID: 1105160079}
+  - {fileID: 181913117}
+  - {fileID: 1154319855}
+  - {fileID: 107677954}
+  - {fileID: 1044679998}
+  - {fileID: 1441851496}
+  - {fileID: 1743745832}
+  - {fileID: 1745714529}
+  - {fileID: 350076644}
+  - {fileID: 528626386}
+  - {fileID: 986871672}
+  - {fileID: 1720113017}
+  m_Father: {fileID: 0}
+--- !u!114 &1399208160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400114, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1399208158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3bbc4cdd17cbce46bb9acb1f85e3716, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1426567257
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100042, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1426567258}
+  - 114: {fileID: 1426567259}
+  m_Layer: 0
+  m_Name: Shortsword
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1426567258
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400042, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1426567257}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1426567259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400042, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1426567257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 2
+  opponentType: 1
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &1439942701
 GameObject:
   m_ObjectHideFlags: 0
@@ -2348,7 +5606,8 @@ GameObject:
   - 33: {fileID: 1439942705}
   - 64: {fileID: 1439942704}
   - 23: {fileID: 1439942703}
-  m_Layer: 0
+  - 114: {fileID: 1439942706}
+  m_Layer: 9
   m_Name: Shoes Selection Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2408,6 +5667,241 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1439942701}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1439942706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1439942701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90157ff9d56bc9a41a2fa740a8368db8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equpmentSlot: 4
+--- !u!1 &1439975555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100078, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1439975556}
+  - 114: {fileID: 1439975557}
+  m_Layer: 0
+  m_Name: Fight pants
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1439975556
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400078, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1439975555}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1439975557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400078, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1439975555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 3
+  fighterCardsGenerated: 2
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 0
+  opponentType: 2
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1441851495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100024, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1441851496}
+  - 114: {fileID: 1441851497}
+  m_Layer: 0
+  m_Name: Stone Golem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1441851496
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400024, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1441851495}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1441851497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400024, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1441851495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 1
+  magesNeeded: 1
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+--- !u!1 &1443247011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100102, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1443247012}
+  - 114: {fileID: 1443247013}
+  m_Layer: 0
+  m_Name: FighterHelmut
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1443247012
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400102, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1443247011}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1443247013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400100, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1443247011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 0
+  fighterCardsGenerated: 2
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 0
+  opponentType: 2
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1445014347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1445014348}
+  - 114: {fileID: 1445014349}
+  m_Layer: 0
+  m_Name: Gorgon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1445014348
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1445014347}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1445014349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1445014347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 0
+  magesNeeded: 2
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+--- !u!1 &1446103676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100024, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1446103677}
+  - 114: {fileID: 1446103678}
+  m_Layer: 0
+  m_Name: Potion of speed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1446103677
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400024, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1446103676}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1446103678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400024, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1446103676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 1
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 1
+  opponentType: 2
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &1450643952
 GameObject:
   m_ObjectHideFlags: 0
@@ -2466,6 +5960,185 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1631560554}
   m_GameObject: {fileID: 1450643952}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1458521019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100070, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1458521020}
+  - 114: {fileID: 1458521021}
+  m_Layer: 0
+  m_Name: Magic gloves
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1458521020
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400070, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1458521019}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1458521021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400070, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1458521019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 2
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 2
+  thiefCardsGenerated: 0
+  opponentType: 3
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1472523189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100090, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1472523190}
+  - 114: {fileID: 1472523191}
+  m_Layer: 0
+  m_Name: Wizard Hat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1472523190
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400090, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1472523189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1472523191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400090, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1472523189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 0
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 2
+  thiefCardsGenerated: 0
+  opponentType: 3
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1491236597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100020, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1491236598}
+  - 114: {fileID: 1491236599}
+  m_Layer: 0
+  m_Name: Crystal Ball
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1491236598
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400020, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1491236597}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1491236599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400020, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1491236597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 2
+  thiefCardsGenerated: 0
+  opponentType: 3
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1504700895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100108, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1504700896}
+  - 114: {fileID: 1504700897}
+  m_Layer: 0
+  m_Name: Clothsline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1504700896
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400108, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1504700895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1504700897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400108, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1504700895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 1
+  magesNeeded: 0
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &1508304152
 GameObject:
   m_ObjectHideFlags: 0
@@ -2542,6 +6215,139 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1631560554}
   m_GameObject: {fileID: 1508304152}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1527122383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100074, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1527122384}
+  - 114: {fileID: 1527122385}
+  m_Layer: 0
+  m_Name: Closing Walls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1527122384
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400074, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1527122383}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1527122385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400074, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1527122383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 2
+  magesNeeded: 1
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1528632657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100048, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1528632658}
+  - 114: {fileID: 1528632659}
+  m_Layer: 0
+  m_Name: Hood of Insight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1528632658
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400048, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1528632657}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1528632659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400048, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1528632657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 1
+  thiefCardsGenerated: 1
+  opponentType: 3
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1531492322
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100056, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1531492323}
+  - 114: {fileID: 1531492324}
+  m_Layer: 0
+  m_Name: Militia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1531492323
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400056, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1531492322}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1531492324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400056, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1531492322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 2
+  magesNeeded: 0
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
 --- !u!1001 &1578931855
 Prefab:
   m_ObjectHideFlags: 0
@@ -2586,6 +6392,51 @@ Prefab:
   m_RootGameObject: {fileID: 76704853}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1579524255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100010, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1579524256}
+  - 114: {fileID: 1579524257}
+  m_Layer: 0
+  m_Name: Magical healing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1579524256
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400010, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1579524255}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1579524257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400010, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1579524255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 2
+  mageCardsGenerated: 1
+  thiefCardsGenerated: 0
+  opponentType: 1
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &1590848759
 GameObject:
   m_ObjectHideFlags: 0
@@ -2596,7 +6447,7 @@ GameObject:
   - 4: {fileID: 1590848760}
   - 23: {fileID: 1590848762}
   - 102: {fileID: 1590848761}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Legs Selection Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2656,6 +6507,50 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
+--- !u!1 &1602008079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100060, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1602008080}
+  - 114: {fileID: 1602008081}
+  m_Layer: 0
+  m_Name: Pickpocket
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1602008080
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400060, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1602008079}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1602008081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400060, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1602008079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 0
+  magesNeeded: 1
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
 --- !u!1 &1610774969
 GameObject:
   m_ObjectHideFlags: 0
@@ -2729,6 +6624,139 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1631560554}
   m_GameObject: {fileID: 1610774969}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1614007021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100086, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1614007022}
+  - 114: {fileID: 1614007023}
+  m_Layer: 0
+  m_Name: Ninja suit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1614007022
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400086, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1614007021}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1614007023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400086, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1614007021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 1
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 1
+  thiefCardsGenerated: 1
+  opponentType: 3
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1618182921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100084, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1618182922}
+  - 114: {fileID: 1618182923}
+  m_Layer: 0
+  m_Name: Lava Flood
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1618182922
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400084, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1618182921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1618182923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400084, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1618182921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 1
+  magesNeeded: 0
+  thievesNeeded: 2
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1625665994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100114, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1625665995}
+  - 114: {fileID: 1625665996}
+  m_Layer: 0
+  m_Name: Blinding Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1625665995
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400114, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1625665994}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1625665996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400112, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1625665994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 0
+  magesNeeded: 1
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1001 &1631560554
 Prefab:
   m_ObjectHideFlags: 0
@@ -2769,6 +6797,272 @@ Prefab:
   m_RootGameObject: {fileID: 1271948353}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1694259353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1694259354}
+  - 114: {fileID: 1694259355}
+  m_Layer: 0
+  m_Name: Dragon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1694259354
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1694259353}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1694259355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1694259353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 1
+  magesNeeded: 1
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+--- !u!1 &1696481928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100062, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1696481929}
+  - 114: {fileID: 1696481930}
+  m_Layer: 0
+  m_Name: Mercenary
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1696481929
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400062, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1696481928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1696481930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400062, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1696481928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 1
+  magesNeeded: 1
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+--- !u!1 &1709396185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100090, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1709396186}
+  - 114: {fileID: 1709396187}
+  m_Layer: 0
+  m_Name: Fire Trap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1709396186
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400090, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1709396185}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1709396187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400090, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1709396185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 0
+  magesNeeded: 1
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1720113016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100054, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1720113017}
+  - 114: {fileID: 1720113018}
+  m_Layer: 0
+  m_Name: Zombie
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1720113017
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400054, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1720113016}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1720113018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400054, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1720113016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 2
+  magesNeeded: 0
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+--- !u!1 &1724720910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100008, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1724720911}
+  - 114: {fileID: 1724720912}
+  m_Layer: 0
+  m_Name: Whip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1724720911
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400008, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1724720910}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1724720912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400008, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1724720910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 3
+  opponentType: 3
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1727872344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100038, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1727872345}
+  - 114: {fileID: 1727872346}
+  m_Layer: 0
+  m_Name: Spell tome
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1727872345
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400038, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1727872344}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1727872346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400038, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1727872344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 3
+  thiefCardsGenerated: 0
+  opponentType: 2
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1001 &1732823696
 Prefab:
   m_ObjectHideFlags: 0
@@ -2865,6 +7159,404 @@ Prefab:
   m_RootGameObject: {fileID: 1050679205}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1743745831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100076, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1743745832}
+  - 114: {fileID: 1743745833}
+  m_Layer: 0
+  m_Name: Tribesman
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1743745832
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400076, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1743745831}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1743745833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400076, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1743745831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 0
+  magesNeeded: 0
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+--- !u!1 &1745714528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100036, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1745714529}
+  - 114: {fileID: 1745714530}
+  m_Layer: 0
+  m_Name: Troll
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1745714529
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400036, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1745714528}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1745714530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400036, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1745714528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 1
+  magesNeeded: 0
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+--- !u!1 &1758699823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100034, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1758699824}
+  - 114: {fileID: 1758699825}
+  m_Layer: 0
+  m_Name: Magic sword
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1758699824
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400034, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1758699823}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1758699825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400034, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1758699823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 2
+  mageCardsGenerated: 1
+  thiefCardsGenerated: 0
+  opponentType: 1
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1784999026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100104, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1784999027}
+  - 114: {fileID: 1784999028}
+  m_Layer: 0
+  m_Name: Arrow Trap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1784999027
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400104, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1784999026}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1784999028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400104, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1784999026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 1
+  magesNeeded: 0
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1800216117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100086, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1800216118}
+  - 114: {fileID: 1800216119}
+  m_Layer: 0
+  m_Name: Marbles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1800216118
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400086, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1800216117}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1800216119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400086, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1800216117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 0
+  magesNeeded: 1
+  thievesNeeded: 2
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1806850335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100074, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1806850336}
+  - 114: {fileID: 1806850337}
+  m_Layer: 0
+  m_Name: Safety gloves
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1806850336
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400074, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1806850335}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1806850337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400074, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1806850335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 2
+  fighterCardsGenerated: 1
+  mageCardsGenerated: 1
+  thiefCardsGenerated: 0
+  opponentType: 2
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1807729042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100058, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1807729043}
+  - 114: {fileID: 1807729044}
+  m_Layer: 0
+  m_Name: Grave Robber
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1807729043
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400058, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1807729042}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1807729044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400058, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1807729042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 2
+  magesNeeded: 0
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
+--- !u!1 &1814312090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1814312091}
+  - 114: {fileID: 1814312092}
+  m_Layer: 0
+  m_Name: Mummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1814312091
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1814312090}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1814312092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1814312090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 0
+  magesNeeded: 1
+  thievesNeeded: 2
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+--- !u!1 &1842427329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100050, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1842427330}
+  - 114: {fileID: 1842427331}
+  m_Layer: 0
+  m_Name: Direwolf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1842427330
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400050, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1842427329}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &1842427331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400050, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 1842427329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 2
+  fightersNeeded: 1
+  magesNeeded: 1
+  thievesNeeded: 0
+  opponentImage: {fileID: 2100000, guid: ca8087e82ebb0664187d2a3ea96e9e87, type: 2}
 --- !u!1 &1856528575
 GameObject:
   m_ObjectHideFlags: 0
@@ -2916,7 +7608,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b3ba644c862bff6408f1e33fbad5f74b, type: 2}
   - {fileID: 2100000, guid: e2bdf0d67ee11d84babcc32d476172a1, type: 2}
   - {fileID: 2100000, guid: 39408f666f4bb534d8cdacf558fdcbff, type: 2}
-  - {fileID: 2100000, guid: b9deac9238cd1e940a66cb2a79e7d331, type: 2}
   selected: 0
 --- !u!114 &1856528578
 MonoBehaviour:
@@ -3080,6 +7771,141 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1631560554}
   m_GameObject: {fileID: 1876877821}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1879631221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100018, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1879631222}
+  - 114: {fileID: 1879631223}
+  m_Layer: 0
+  m_Name: Shield
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1879631222
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400018, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1879631221}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1879631223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400018, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1879631221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 2
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 0
+  opponentType: 2
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1896160305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100098, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1896160306}
+  - 114: {fileID: 1896160307}
+  m_Layer: 0
+  m_Name: Breastplate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1896160306
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400098, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1896160305}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1896160307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400098, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1896160305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 1
+  fighterCardsGenerated: 2
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 0
+  opponentType: 2
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &1926127687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1926127688}
+  - 114: {fileID: 1926127689}
+  m_Layer: 0
+  m_Name: Unusual dexterity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1926127688
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1926127687}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &1926127689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 1926127687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 1
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 2
+  opponentType: 3
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &1961282307
 GameObject:
   m_ObjectHideFlags: 0
@@ -3131,7 +7957,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b3ba644c862bff6408f1e33fbad5f74b, type: 2}
   - {fileID: 2100000, guid: e2bdf0d67ee11d84babcc32d476172a1, type: 2}
   - {fileID: 2100000, guid: 39408f666f4bb534d8cdacf558fdcbff, type: 2}
-  - {fileID: 2100000, guid: b9deac9238cd1e940a66cb2a79e7d331, type: 2}
   selected: 0
 --- !u!114 &1961282310
 MonoBehaviour:
@@ -3193,6 +8018,51 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1631560554}
   m_GameObject: {fileID: 1961282307}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2029505208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100056, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2029505209}
+  - 114: {fileID: 2029505210}
+  m_Layer: 0
+  m_Name: Toe shoes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2029505209
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400056, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 2029505208}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &2029505210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400056, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 2029505208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 4
+  fighterCardsGenerated: 0
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 2
+  opponentType: 1
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &2036858953
 GameObject:
   m_ObjectHideFlags: 0
@@ -3201,7 +8071,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2036858954}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Character Selection Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3225,6 +8095,183 @@ Transform:
   - {fileID: 743913573}
   - {fileID: 1439942702}
   m_Father: {fileID: 0}
+--- !u!1 &2045901694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100034, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2045901695}
+  - 114: {fileID: 2045901696}
+  m_Layer: 0
+  m_Name: Clockwork Monstrosity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2045901695
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400034, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 2045901694}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &2045901696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400034, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 2045901694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 0
+  magesNeeded: 1
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
+--- !u!1 &2075758475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100046, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2075758476}
+  - 114: {fileID: 2075758477}
+  m_Layer: 0
+  m_Name: Brass Knuckles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2075758476
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400046, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 2075758475}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &2075758477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400046, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 2075758475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 2
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 0
+  opponentType: 2
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &2083541337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100094, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2083541338}
+  - 114: {fileID: 2083541339}
+  m_Layer: 0
+  m_Name: Boiling Grease
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2083541338
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400094, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 2083541337}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &2083541339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400094, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 2083541337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 1
+  fightersNeeded: 0
+  magesNeeded: 0
+  thievesNeeded: 2
+  opponentImage: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
+--- !u!1 &2110489324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100028, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2110489325}
+  - 114: {fileID: 2110489326}
+  m_Layer: 0
+  m_Name: Land Squid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2110489325
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400028, guid: 6ca5a7af6019dd54fa1bed9758b88df0, type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 2110489324}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399208159}
+--- !u!114 &2110489326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400028, guid: 6ca5a7af6019dd54fa1bed9758b88df0,
+    type: 2}
+  m_PrefabInternal: {fileID: 471861659}
+  m_GameObject: {fileID: 2110489324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bd60efa49f3ab4b810bdff92c65d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opponentType: 3
+  fightersNeeded: 0
+  magesNeeded: 2
+  thievesNeeded: 1
+  opponentImage: {fileID: 2100000, guid: e63dc31bdc10a554fab5cd10397ab3c0, type: 2}
 --- !u!1 &2116199423
 GameObject:
   m_ObjectHideFlags: 0
@@ -3283,6 +8330,51 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1631560554}
   m_GameObject: {fileID: 2116199423}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2122044072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2122044073}
+  - 114: {fileID: 2122044074}
+  m_Layer: 0
+  m_Name: Uncommon strength
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2122044073
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 2122044072}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &2122044074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 2122044072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 2
+  mageCardsGenerated: 0
+  thiefCardsGenerated: 1
+  opponentType: 3
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
 --- !u!1 &2127683370
 GameObject:
   m_ObjectHideFlags: 0
@@ -3294,7 +8386,8 @@ GameObject:
   - 33: {fileID: 2127683374}
   - 64: {fileID: 2127683373}
   - 23: {fileID: 2127683372}
-  m_Layer: 0
+  - 114: {fileID: 2127683375}
+  m_Layer: 9
   m_Name: Legs Selection Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3354,6 +8447,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2127683370}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2127683375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2127683370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90157ff9d56bc9a41a2fa740a8368db8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equpmentSlot: 3
 --- !u!1 &2132204046
 GameObject:
   m_ObjectHideFlags: 0
@@ -3364,7 +8469,7 @@ GameObject:
   - 4: {fileID: 2132204047}
   - 23: {fileID: 2132204049}
   - 102: {fileID: 2132204048}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shoes Selection Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3424,3 +8529,48 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
+--- !u!1 &2134399890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100052, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2134399891}
+  - 114: {fileID: 2134399892}
+  m_Layer: 0
+  m_Name: Ring of Protection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2134399891
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400052, guid: 5ef7693439d0903438bbc8c07df2aedf, type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 2134399890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1111867386}
+--- !u!114 &2134399892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400052, guid: 5ef7693439d0903438bbc8c07df2aedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144274289}
+  m_GameObject: {fileID: 2134399890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea65395717fc9cf4f8812dcb41208816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot: 5
+  fighterCardsGenerated: 1
+  mageCardsGenerated: 1
+  thiefCardsGenerated: 0
+  opponentType: 2
+  equipmentIcon: {fileID: 2100000, guid: 8092444f6383e944fb786d60f8e39135, type: 2}
