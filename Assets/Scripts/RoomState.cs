@@ -39,6 +39,9 @@ public class RoomState : MonoBehaviour
 	public LayerMask tileClickMask;
 	public Vector3 tileFocusOffset;
 	public GameObject characterSelectionMenu;
+
+	DungeonTile currentRoom;
+
 	void Awake()
 	{
 		instance = this;
@@ -56,9 +59,9 @@ public class RoomState : MonoBehaviour
 
 		BuildDungeon();
 		RandomlyPopulateDungeon();
-		PositionCameraForCharacterSelection();
+//		PositionCameraForCharacterSelection();
 
-		CardManager.instance.SetGUIActive(false);
+//		CardManager.instance.SetGUIActive(false);
 	}
 
 	void Update()
@@ -162,12 +165,80 @@ public class RoomState : MonoBehaviour
 		{
 			tile.SetEquipmentDefinition(EquipmentManager.instance.PullRandomEquipment(GetDungeonEquipmentSlot(tile.tileIndex)));
 		}
+
+		SetupDeck();
+		ChangePhase(GamePhase.RoomSelection);
+	}
+
+	void SetupDeck()
+	{
+		int fighterCards = 0;
+		int mageCards = 0;
+		int thiefCards = 0;
+		
+		foreach (var tile in dungeonTiles)
+		{
+			var equipment = tile.GetEquipment();
+			fighterCards += equipment.fighterCardsGenerated;
+			mageCards += equipment.mageCardsGenerated;
+			thiefCards += equipment.thiefCardsGenerated;
+		}
+
+		CardManager.instance.CreateDeck(fighterCards, mageCards, thiefCards);
 	}
 
 	public void SetClearColor(Color clearColor)
 	{
 		mainCamera.backgroundColor = clearColor;
 	}
+
+	void ChangePhase(GamePhase newPhase)
+	{
+		switch (newPhase)
+		{
+		case GamePhase.RoomSelection:
+			CardManager.instance.SetGUIActive(false);
+			PositionCameraForGamePlay();
+			break;
+		case GamePhase.DungeonAction:
+			CardManager.instance.SetGUIActive(true);
+			break;
+		default:
+			// whatever
+			break;
+		}
+		currentPhase = newPhase;
+	}
+
+	public void OpponentDefeated()
+	{
+		if (null != currentRoom)
+		{
+			currentRoom.opponentType = OpponentType.None;
+			currentRoom.SetOpponent(null);
+			currentRoom = null;
+		}
+
+		// Check for win condition
+		bool wonGame = true;
+		foreach (var tile in dungeonTiles)
+		{
+			if (tile.opponentType != OpponentType.None)
+			{
+				wonGame = false;
+				break;
+			}
+		}
+		if (wonGame)
+		{
+			DisplayYouWin();
+		}
+		else
+		{
+			ChangePhase(GamePhase.RoomSelection);
+		}
+	}
+
 
 	void CheckTileClick()
 	{
@@ -189,16 +260,18 @@ public class RoomState : MonoBehaviour
 						}
 						break;
 					case GamePhase.RoomSelection:
-					PositionCameraForCharacterSelection();
-					CardManager.instance.SetGUIActive(true);
-						tileOver.FlipToDungeon();
-						ZoomIntoTile(tileOver);
-						currentPhase=GamePhase.DungeonAction;
+						if (tileOver.opponentType != OpponentType.None)
+						{
+							currentRoom = tileOver;
+							currentRoom.FlipToDungeon();
+							ZoomIntoTile(currentRoom);
+							var opponent = OpponentManager.instance.PullRandomOpponent(currentRoom.opponentType);
+							currentRoom.SetOpponent(opponent);
+							CardManager.instance.opponentCard.ShowOpponent(opponent);
+							ChangePhase(GamePhase.DungeonAction);
+						}
 						break;
 					case GamePhase.DungeonAction:
-					CardManager.instance.SetGUIActive(false);
-						PositionCameraForGamePlay();
-						currentPhase=GamePhase.RoomSelection;
 						break;
 				}
 
@@ -254,20 +327,69 @@ public class RoomState : MonoBehaviour
 
 	public bool DoSelectedCardsDefeatOpponent()
 	{
-		// TODO: for reals yo
-		int cardSelectedCount = 0;
+		if (null == currentRoom)
+		{
+			return false;
+		}
+
+		var opponent = currentRoom.GetOpponent();
+
+		int fightersNeeded = opponent.fightersNeeded;
+		int magesNeeded = opponent.magesNeeded;
+		int thievesNeeded = opponent.thievesNeeded;
+
+		int overflowCardCount = 0;
 
 		foreach (var selectedCard in CardManager.instance.GetSelectedCards())
 		{
-			++cardSelectedCount;
+			switch (selectedCard)
+			{
+			case CardIcons.Fighter:
+				if (fightersNeeded > 0)
+				{
+					--fightersNeeded;
+				}
+				else
+				{
+					++overflowCardCount;
+				}
+				break;
+			case CardIcons.Mage:
+				if (magesNeeded > 0)
+				{
+					--magesNeeded;
+				}
+				else
+				{
+					++overflowCardCount;
+				}
+				break;
+			case CardIcons.Thief:
+				if (thievesNeeded > 0)
+				{
+					--thievesNeeded;
+				}
+				else
+				{
+					++overflowCardCount;
+				}
+				break;
+			}
 		}
 
-		return cardSelectedCount > 2;
+		return (overflowCardCount / 2) >= (fightersNeeded + magesNeeded + thievesNeeded);
 	}
 
 	public void DisplayYouLose()
 	{
 		// TODO: the card handler has run the deck out of cards
 		// The game is over, change the phase and continue
+		ChangePhase(GamePhase.EpicFail);
+	}
+
+	public void DisplayYouWin()
+	{
+		// TODO: do this
+		ChangePhase(GamePhase.WinGame);
 	}
 }

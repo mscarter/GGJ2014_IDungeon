@@ -13,6 +13,8 @@ public class Slider : MonoBehaviour
 	Transform T;
 	bool slideCanceled;
 
+	bool slideRunning;
+
 	void Awake()
 	{
 		T = transform;
@@ -24,9 +26,23 @@ public class Slider : MonoBehaviour
 		fromPosition = T.localPosition;
 	}
 
+	void OnEnable()
+	{
+		slideRunning = false;
+	}
+
+	void OnDisable()
+	{
+		slideRunning = false;
+	}
+
 	public void StartSlide()
 	{
-		StartCoroutine(DoSlide());
+		if (!slideRunning)
+		{
+			slideRunning = true;
+			StartCoroutine(DoSlide());
+		}
 	}
 
 	IEnumerator DoSlide()
@@ -65,6 +81,8 @@ public class Slider : MonoBehaviour
 		{
 			T.localPosition = toPosition;
 		}
+
+		slideRunning = false;
 	}
 
 	public void CancelSlide()
