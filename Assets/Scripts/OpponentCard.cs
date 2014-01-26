@@ -8,7 +8,7 @@ public class OpponentCard : MonoBehaviour
 	public MeshRenderer opponentTypeIcon;
 	public TextMesh opponentName;
 
-	void Start()
+	void Awake()
 	{
 		gameObject.SetActive(false);
 	}
@@ -25,6 +25,11 @@ public class OpponentCard : MonoBehaviour
 		opponentIcon.material = opponent.opponentImage;
 
 		opponentTypeIcon.material = OpponentManager.instance.opponentIconMaterials[(int)opponent.opponentType];
+
+		for (int i = 0; i < cardTypeNeeded.Length; ++i)
+		{
+			cardTypeNeeded[i].material = EquipmentManager.instance.cardGrantedIconMaterials[(int)CardIcons.None];
+		}
 
 		int cardNeededIndex = 0;
 		for (int i = 0; i < opponent.fightersNeeded; ++i)

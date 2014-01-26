@@ -39,6 +39,11 @@ public class RoomState : MonoBehaviour
 	public LayerMask tileClickMask;
 	public Vector3 tileFocusOffset;
 	public GameObject characterSelectionMenu;
+
+	int selectedItemIndex = -1;
+	int selectedCharacterSlot = -1;
+	DungeonTile currentRoom;
+
 	void Awake()
 	{
 		instance = this;
@@ -55,10 +60,7 @@ public class RoomState : MonoBehaviour
 		currentPhase = GamePhase.CharacterSetup;
 
 		BuildDungeon();
-		RandomlyPopulateDungeon();
 		PositionCameraForCharacterSelection();
-
-		CardManager.instance.SetGUIActive(false);
 	}
 
 	void Update()
@@ -84,6 +86,7 @@ public class RoomState : MonoBehaviour
 				dungeonTile.DungeonSideSelected = false;
 				dungeonTile.ConfigureDungeonGraphics();
 				dungeonTiles.Add(dungeonTile);
+
 			}
 		}
 	}
@@ -162,12 +165,80 @@ public class RoomState : MonoBehaviour
 		{
 			tile.SetEquipmentDefinition(EquipmentManager.instance.PullRandomEquipment(GetDungeonEquipmentSlot(tile.tileIndex)));
 		}
+
+		SetupDeck();
+		ChangePhase(GamePhase.RoomSelection);
+	}
+
+	void SetupDeck()
+	{
+		int fighterCards = 0;
+		int mageCards = 0;
+		int thiefCards = 0;
+		
+		foreach (var tile in dungeonTiles)
+		{
+			var equipment = tile.GetEquipment();
+			fighterCards += equipment.fighterCardsGenerated;
+			mageCards += equipment.mageCardsGenerated;
+			thiefCards += equipment.thiefCardsGenerated;
+		}
+
+		CardManager.instance.CreateDeck(fighterCards, mageCards, thiefCards);
 	}
 
 	public void SetClearColor(Color clearColor)
 	{
 		mainCamera.backgroundColor = clearColor;
 	}
+
+	void ChangePhase(GamePhase newPhase)
+	{
+		switch (newPhase)
+		{
+		case GamePhase.RoomSelection:
+			CardManager.instance.SetGUIActive(false);
+			PositionCameraForGamePlay();
+			break;
+		case GamePhase.DungeonAction:
+			CardManager.instance.SetGUIActive(true);
+			break;
+		default:
+			// whatever
+			break;
+		}
+		currentPhase = newPhase;
+	}
+
+	public void OpponentDefeated()
+	{
+		if (null != currentRoom)
+		{
+			currentRoom.opponentType = OpponentType.None;
+			currentRoom.SetOpponent(null);
+			currentRoom = null;
+		}
+
+		// Check for win condition
+		bool wonGame = true;
+		foreach (var tile in dungeonTiles)
+		{
+			if (tile.opponentType != OpponentType.None)
+			{
+				wonGame = false;
+				break;
+			}
+		}
+		if (wonGame)
+		{
+			DisplayYouWin();
+		}
+		else
+		{
+			ChangePhase(GamePhase.RoomSelection);
+		}
+	}
+
 
 	void CheckTileClick()
 	{
@@ -184,21 +255,47 @@ public class RoomState : MonoBehaviour
 				switch (currentPhase) {
 					case GamePhase.CharacterSetup:
 						if (!tileOver.dungeonSideDisplayed) {
-						bool toggle = tileOver.AttributeSideSelected;
-						tileOver.AttributeSideSelected=!toggle;
+							bool toggle = tileOver.AttributeSideSelected;
+							tileOver.AttributeSideSelected=!toggle;
+							if (characterItemSelections.Contains(tileOver) ) {
+							selectedItemIndex=tileOver.tileIndex;
+						} else {
+							selectedCharacterSlot = tileOver.tileIndex;
 						}
+					}
+				if (selectedItemIndex!=-1 && selectedCharacterSlot!=-1){
+						DungeonTile characterSlot = dungeonTiles[selectedCharacterSlot];
+						DungeonTile itemSelected = characterItemSelections[selectedItemIndex];
+						characterSlot.SetEquipmentDefinition(itemSelected.GetEquipmentDefinition());
+						selectedItemIndex=-1;
+						selectedCharacterSlot=-1;
+						characterSlot.SetAttributeSideSelect(false);
+						itemSelected.SetAttributeSideSelect(false);
+						bool allAssigned = true;
+						foreach (DungeonTile myTiles in dungeonTiles){
+							if (myTiles.GetEquipmentDefinition() == null) {
+								allAssigned = false;
+								break;
+							}
+						}
+						if (allAssigned) {
+							characterSelectionMenu.gameObject.SetActive(false);
+						}
+					}
 						break;
 					case GamePhase.RoomSelection:
-					PositionCameraForCharacterSelection();
-					CardManager.instance.SetGUIActive(true);
-						tileOver.FlipToDungeon();
-						ZoomIntoTile(tileOver);
-						currentPhase=GamePhase.DungeonAction;
+						if (tileOver.opponentType != OpponentType.None)
+						{
+							currentRoom = tileOver;
+							currentRoom.FlipToDungeon();
+							ZoomIntoTile(currentRoom);
+							var opponent = OpponentManager.instance.PullRandomOpponent(currentRoom.opponentType);
+							currentRoom.SetOpponent(opponent);
+							CardManager.instance.opponentCard.ShowOpponent(opponent);
+							ChangePhase(GamePhase.DungeonAction);
+						}
 						break;
 					case GamePhase.DungeonAction:
-					CardManager.instance.SetGUIActive(false);
-						PositionCameraForGamePlay();
-						currentPhase=GamePhase.RoomSelection;
 						break;
 				}
 
@@ -215,20 +312,31 @@ public class RoomState : MonoBehaviour
 
 	void FlipMenu (EquipmentSlot equipmentSlot)
 	{
-		characterSelectionMenu.animation.Play ("CardFlipDungeon");
-		int index = 0;
-		foreach (EquipmentDefinition equip in EquipmentManager.instance.GetEquipmentList (equipmentSlot) ) {
-			var tile = (GameObject)Instantiate(dungeonTilePrefab);
-			tile.transform.position = new Vector3(4.3f + index%3 * 0.75f, 3.2f - index/3 * 0.5f, 0);
-			tile.transform.localScale = new Vector3(0.75f, 0.5f, 1f);
-			var dungeonTile = tile.GetComponent<DungeonTile>();
-			dungeonTile.tileIndex = index;
-			dungeonTile.AttributeSideSelected=false;
-			dungeonTile.DungeonSideSelected=false;
-			dungeonTile.SetEquipmentDefinition(equip);
-			characterItemSelections.Add(dungeonTile);
-			index++;
-		}
+		if (equipmentSlot == EquipmentSlot.MAX) {
+			foreach (DungeonTile tile in characterItemSelections) {
+				Destroy(tile.gameObject);
+			}
+			characterItemSelections.Clear();
+			characterSelectionMenu.animation.Play ("CardFlipAttribute");
+				} else {
+					characterSelectionMenu.animation.Play ("CardFlipDungeon");
+					int index = 0;
+					foreach (EquipmentDefinition equip in EquipmentManager.instance.GetEquipmentList (equipmentSlot)) {
+							var tile = (GameObject)Instantiate (dungeonTilePrefab);
+							tile.transform.parent = characterSelectionMenu.transform;
+							tile.transform.localPosition = new Vector3 (0.75f + index % 3 * -0.75f, -0.5f + index / 3 * -0.5f, 0.04f);
+							tile.transform.localScale = new Vector3 (0.75f, 0.5f, 1f);
+							var dungeonTile = tile.GetComponent<DungeonTile> ();
+							dungeonTile.tileIndex = index;
+							dungeonTile.AttributeSideSelected = false;
+							dungeonTile.DungeonSideSelected = false;
+							dungeonTile.FlipToDungeon ();
+							dungeonTile.SetEquipmentDefinition (equip);
+							dungeonTile.dungeonSideDisplayed=false;
+							characterItemSelections.Add (dungeonTile);
+							index++;
+					}
+				}
 	}
 	
 	void PositionCameraForCharacterSelection() {
@@ -254,20 +362,69 @@ public class RoomState : MonoBehaviour
 
 	public bool DoSelectedCardsDefeatOpponent()
 	{
-		// TODO: for reals yo
-		int cardSelectedCount = 0;
+		if (null == currentRoom)
+		{
+			return false;
+		}
+
+		var opponent = currentRoom.GetOpponent();
+
+		int fightersNeeded = opponent.fightersNeeded;
+		int magesNeeded = opponent.magesNeeded;
+		int thievesNeeded = opponent.thievesNeeded;
+
+		int overflowCardCount = 0;
 
 		foreach (var selectedCard in CardManager.instance.GetSelectedCards())
 		{
-			++cardSelectedCount;
+			switch (selectedCard)
+			{
+			case CardIcons.Fighter:
+				if (fightersNeeded > 0)
+				{
+					--fightersNeeded;
+				}
+				else
+				{
+					++overflowCardCount;
+				}
+				break;
+			case CardIcons.Mage:
+				if (magesNeeded > 0)
+				{
+					--magesNeeded;
+				}
+				else
+				{
+					++overflowCardCount;
+				}
+				break;
+			case CardIcons.Thief:
+				if (thievesNeeded > 0)
+				{
+					--thievesNeeded;
+				}
+				else
+				{
+					++overflowCardCount;
+				}
+				break;
+			}
 		}
 
-		return cardSelectedCount > 2;
+		return (overflowCardCount / 2) >= (fightersNeeded + magesNeeded + thievesNeeded);
 	}
 
 	public void DisplayYouLose()
 	{
 		// TODO: the card handler has run the deck out of cards
 		// The game is over, change the phase and continue
+		ChangePhase(GamePhase.EpicFail);
+	}
+
+	public void DisplayYouWin()
+	{
+		// TODO: do this
+		ChangePhase(GamePhase.WinGame);
 	}
 }

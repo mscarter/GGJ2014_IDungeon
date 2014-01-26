@@ -28,6 +28,8 @@ public class DungeonTile : MonoBehaviour
 	public MeshRenderer equipmentTypeIcon;
 	public TextMesh equipmentName;
 
+	public OpponentType opponentType;
+
 	void Start()
 	{
 		opponentRenderer.enabled = false;
@@ -81,7 +83,6 @@ public class DungeonTile : MonoBehaviour
 	public void SetDungeonSideSelect(bool value) 
 	{
 		dungeonGlow.gameObject.SetActive (value);
-
 	}
 
 	public void SetAttributeSideSelect(bool value)
@@ -114,7 +115,18 @@ public class DungeonTile : MonoBehaviour
 
 		equipmentTypeIcon.material = EquipmentManager.instance.equipmentTypeIconMaterials[(int)equipment.slot];
 		equipmentName.text = equipment.name;
+
+		opponentType = equipment.opponentType;
 	}
+
+	public EquipmentDefinition GetEquipment()
+	{
+		return equipment;
+	}
+
+	public EquipmentDefinition GetEquipmentDefinition() {
+				return equipment;
+		}
 
 	public void ConfigureDungeonGraphics()
 	{
@@ -129,7 +141,13 @@ public class DungeonTile : MonoBehaviour
 			opponentRenderer.enabled = false;
 			return;
 		}
+		this.opponent = opponent;
 		opponentRenderer.enabled = true;
 		opponentRenderer.material = opponent.opponentImage;
+	}
+
+	public DungeonOpponent GetOpponent()
+	{
+		return opponent;
 	}
 }
