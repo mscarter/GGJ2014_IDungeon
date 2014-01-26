@@ -79,7 +79,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: e544020a8fa0f6e4eb5da9a3b5469aee, type: 2}
   - {fileID: 2100000, guid: e544020a8fa0f6e4eb5da9a3b5469aee, type: 2}
   - {fileID: 2100000, guid: e544020a8fa0f6e4eb5da9a3b5469aee, type: 2}
-  clearColor: {r: 0, g: 0, b: 0, a: 0}
+  clearColor: {r: .172549024, g: .168627456, b: .145098045, a: 1}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

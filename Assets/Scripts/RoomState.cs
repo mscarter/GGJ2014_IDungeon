@@ -164,6 +164,11 @@ public class RoomState : MonoBehaviour
 		}
 	}
 
+	public void SetClearColor(Color clearColor)
+	{
+		mainCamera.backgroundColor = clearColor;
+	}
+
 	void CheckTileClick()
 	{
 
