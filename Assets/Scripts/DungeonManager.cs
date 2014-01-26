@@ -34,6 +34,11 @@ public class DungeonManager : MonoBehaviour
 		instance = null;
 	}
 
+	void Start()
+	{
+		RoomState.instance.SetClearColor(tileSets[selectedTileSet].clearColor);
+	}
+
 	public Material GetBackground()
 	{
 		return tileSets[selectedTileSet].backgroundImages[Random.Range(0,tileSets[selectedTileSet].backgroundImages.Length)];

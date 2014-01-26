@@ -15,6 +15,8 @@ public class CardManager : MonoBehaviour
 
 	public TextMesh deckCount;
 
+	public OpponentCard opponentCard;
+
 	CardUI hoveredCard;
 
 	Deck deck;

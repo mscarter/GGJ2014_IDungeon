@@ -5,6 +5,7 @@ public class DungeonTile : MonoBehaviour
 {
 	public MeshRenderer attributeSide;
 	public MeshRenderer dungeonSide;
+	public MeshRenderer dungeonWallOverlay;
 
 	public bool dungeonSideDisplayed;
 
@@ -26,6 +27,11 @@ public class DungeonTile : MonoBehaviour
 	public MeshRenderer[] cardTypeGranted;
 	public MeshRenderer equipmentTypeIcon;
 	public TextMesh equipmentName;
+
+	void Start()
+	{
+		opponentRenderer.enabled = false;
+	}
 
 	public bool DungeonSideSelected
 	{
@@ -113,6 +119,17 @@ public class DungeonTile : MonoBehaviour
 	public void ConfigureDungeonGraphics()
 	{
 		dungeonSide.material = DungeonManager.instance.GetBackground();
-		// TODO: set door overlay
+		dungeonWallOverlay.material = DungeonManager.instance.GetDoorsAndWalls(RoomState.GetDungeonDoorsAndWalls(tileIndex));
+	}
+
+	public void SetOpponent(DungeonOpponent opponent)
+	{
+		if (null == opponent)
+		{
+			opponentRenderer.enabled = false;
+			return;
+		}
+		opponentRenderer.enabled = true;
+		opponentRenderer.material = opponent.opponentImage;
 	}
 }

@@ -5,6 +5,8 @@ using System.Collections.Generic;
 public class OpponentManager : MonoBehaviour
 {
 	static public OpponentManager instance;
+
+	public Material[] opponentIconMaterials;
 	
 	DungeonOpponent[] opponents;
 
