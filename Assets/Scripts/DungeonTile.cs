@@ -33,4 +33,5 @@ public class DungeonTile : MonoBehaviour
 		animation.Play("CardFlipAttribute");
 		dungeonSideDisplayed = false;
 	}
+	
 }

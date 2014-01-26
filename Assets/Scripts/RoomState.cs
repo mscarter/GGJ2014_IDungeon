@@ -6,6 +6,8 @@ public class RoomState : MonoBehaviour
 {
 	static public RoomState instance;
 
+	public Vector3 characterSelectionCameraPosition;
+
 	const int handCardSize = 6;
 
 	const int dungeonWidth = 3;
@@ -45,7 +47,6 @@ public class RoomState : MonoBehaviour
 
 	public GamePhase currentPhase;
 	public OpponentType currentOpponent;
-	public GameObject cardHandDisabler;
 
 	public GameObject dungeonTilePrefab;
 	List<DungeonTile> dungeonTiles = new List<DungeonTile>();
@@ -73,8 +74,9 @@ public class RoomState : MonoBehaviour
 //		SetOpponentGraphic();
 
 		BuildDungeon();
-		PositionCamera();
-		cardHandDisabler.SetActive(false);
+		PositionCameraForCharacterSelection();
+
+		CardManager.instance.SetGUIActive(false);
 	}
 
 	void Update()
@@ -125,14 +127,15 @@ public class RoomState : MonoBehaviour
 						}
 						break;
 					case GamePhase.RoomSelection:
-						cardHandDisabler.SetActive(true);
+					PositionCameraForCharacterSelection();
+					CardManager.instance.SetGUIActive(true);
 						tileOver.FlipToDungeon();
 						ZoomIntoTile(tileOver);
 						currentPhase=GamePhase.DungeonAction;
 						break;
 					case GamePhase.DungeonAction:
-						cardHandDisabler.SetActive (false);
-						PositionCamera();
+					CardManager.instance.SetGUIActive(false);
+						PositionCameraForGamePlay();
 						currentPhase=GamePhase.RoomSelection;
 						break;
 				}
@@ -141,7 +144,14 @@ public class RoomState : MonoBehaviour
 		}
 	}
 
-	void PositionCamera()
+
+	void PositionCameraForCharacterSelection() {
+		cameraSlider.toPosition = characterSelectionCameraPosition;
+		cameraSlider.UseFromPosition();
+		cameraSlider.StartSlide(); 
+	}
+
+	void PositionCameraForGamePlay()
 	{
 		cameraSlider.toPosition = new Vector3( tileOffset * dungeonWidth / 2f - 0.5f, tileOffset * dungeonHeight / 2f  - 0.5f, -4f);
 		cameraSlider.UseFromPosition();

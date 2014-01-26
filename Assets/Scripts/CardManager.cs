@@ -29,6 +29,11 @@ public class CardManager : MonoBehaviour
 		instance = null;
 	}
 
+	public void SetGUIActive(bool active)
+	{
+		gameObject.SetActive(active);
+	}
+
 	void Start()
 	{
 		// Temporary deck setup
